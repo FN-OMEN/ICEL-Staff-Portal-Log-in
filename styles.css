@@ -111,3 +111,6 @@ body{
   background: #0a4cfe;
   transition: 0.5s ease-in-out;
 }
+.user{
+  text-align: center;
+}
