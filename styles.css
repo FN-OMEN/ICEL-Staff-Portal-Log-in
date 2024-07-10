@@ -6,9 +6,12 @@ body{
 }
 .container{
   display: flex;
-  width: 100%;
   justify-content: flex-start;
-  gap: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  gap: 250px;
 }
 .header{
   width: 80%;
@@ -17,22 +20,24 @@ body{
 .left-content{
   align-items: center;
   text-align: center;
-  flex-basis: 80%;
+  flex-basis: 50%;
 }
 .left-content h3{
   font-weight: 700;
   color: rgb(22, 182, 102);
 }
 .right-content{
-  text-align: left;
-  flex-basis: 55%;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%;
   display: flex;
 }
-.right-container{
-  width: 64%;
-  text-align: left;
-  vertical-align: top;
-  margin-top: -40px;
+.right-content-carrier{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .right-content .fa-solid{
   font-size: 70px;
@@ -43,7 +48,6 @@ body{
   font-weight: 600;
   vertical-align: top;
   width: 100%;
-  text-align: left;
 }
 .username{
   padding: 10px 0 10px 20px;
@@ -83,9 +87,9 @@ body{
 }
 .call-to-action{
   display: flex;
-  text-align: center;
   flex-direction: row;
-  gap: 67px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .checkbox{
@@ -99,7 +103,7 @@ body{
   color: rgb(22, 182, 102);
 }
 .log-in-btn{
-  width: 328px;
+  width: 100%;
   font-size: 15px;
   font-weight: 600;
   color: white;
@@ -113,7 +117,6 @@ body{
   background: #0a4cfe;
   transition: 0.5s ease-in-out;
 }
-.user, form{
-  width: 100%;
+.user{
   text-align: center;
 }
