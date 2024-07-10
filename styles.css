@@ -35,6 +35,7 @@ body{
 }
 .right-content-carrier h1, form, .user{
   width: 100%;
+  text-align: center;
 }
 .right-content .fa-solid{
   font-size: 70px;
