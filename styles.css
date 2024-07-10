@@ -30,7 +30,7 @@ body{
   display: flex;
 }
 .right-container{
-  width: 65%;
+  width: 64%;
   text-align: left;
   vertical-align: top;
   margin-top: -40px;
@@ -83,7 +83,7 @@ body{
 .call-to-action{
   display: flex;
   flex-direction: row;
-  width: 80%;
+  justify-content: space-between;
 }
 
 .checkbox{
