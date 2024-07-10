@@ -33,7 +33,7 @@ body{
   justify-content: center;
   align-items: center;
 }
-.right-content-carrier h1, form, .user{
+.right-content-carrier h1{
   width: 100%;
   text-align: center;
 }
