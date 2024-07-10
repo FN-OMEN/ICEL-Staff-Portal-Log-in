@@ -125,6 +125,10 @@ body{
 .user{
   text-align: center;
 }
+.right-content p{
+  font-size: 14px;
+  color: rgb(22, 182, 102);
+}
 @media(min-width: 1450px){
   .container{
     position: absolute;
@@ -142,5 +146,11 @@ body{
   }
   .left-content img{
     width: 100%;
+  }
+  .header{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
   }
 }
