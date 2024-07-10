@@ -83,8 +83,7 @@ body{
 .call-to-action{
   display: flex;
   flex-direction: row;
-  width: 100%;
-  gap: 72px;
+  width: 80%;
 }
 .checkbox{
   font-size: 13px;
