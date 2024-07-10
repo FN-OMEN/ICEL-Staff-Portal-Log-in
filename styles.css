@@ -3,23 +3,34 @@ body{
   padding: 0;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  height: 100vh;
 }
 .container{
   display: flex;
-  gap: 100px;
-  width: 80%;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin: auto;
-}
-.header{
-  width: 80%;
-  margin: 30px 0 0 60px;
+  height: 100%;
 }
 .left-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 100%;
+  background-color: hsl(204, 43%, 93%);
+  height: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.left-content-carrier{
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  flex-basis: 50%;
-  flex-shrink: 1;
 }
 .left-content h3{
   font-weight: 700;
@@ -28,25 +39,19 @@ body{
 .right-content{
   justify-content: center;
   align-items: center;
-  flex-basis: 40%;
+  flex-basis: 100%;
   display: flex;
-  flex-shrink: 1;
 }
 .right-content-carrier{
-  width: 60%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-shrink: 1;
 }
 .right-content-carrier h1{
   width: 100%;
   text-align: center;
-}
-.right-content .fa-solid{
-  font-size: 70px;
-  margin-bottom: 30px
 }
 .right-content h1{
   color: rgb(22, 182, 102);
@@ -124,10 +129,12 @@ body{
 }
 .user{
   text-align: center;
+  margin-bottom: 20px;
 }
 .right-content p{
   font-size: 14px;
   color: rgb(22, 182, 102);
+  text-align: center;
 }
 @media(min-width: 1450px){
   .container{
@@ -135,6 +142,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
   }
   .left-content img{
     width: 50%;
@@ -143,14 +151,19 @@ body{
 @media(max-width: 950px){
   .container{
     flex-direction: column;
+    gap: 100px;
+  }
+  .left-content{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0px;
   }
   .left-content img{
     width: 100%;
   }
-  .header{
-    width: 80%;
-    text-align: center;
-    margin: auto;
-    margin-top: 20px;
+  .right-content p{
+    margin-bottom: 30px;
+  }
+  body{
+    height: 100%;
   }
 }
