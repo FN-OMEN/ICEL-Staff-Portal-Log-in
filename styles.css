@@ -21,9 +21,6 @@ body{
   flex-basis: 50%;
   flex-shrink: 1;
 }
-.left-content img{
-  width: 100%;
-}
 .left-content h3{
   font-weight: 700;
   color: rgb(22, 182, 102);
@@ -139,5 +136,8 @@ body{
 @media(max-width: 950px){
   .container{
     flex-direction: column;
+  }
+  .left-content img{
+    width: 100%;
   }
 }
