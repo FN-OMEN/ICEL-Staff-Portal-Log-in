@@ -6,6 +6,10 @@ body{
 }
 .container{
   display: flex;
+  gap: 100px;
+  width: 80%;
+  text-align: center;
+  margin: auto;
 }
 .header{
   width: 80%;
@@ -15,6 +19,10 @@ body{
   align-items: center;
   text-align: center;
   flex-basis: 50%;
+  flex-shrink: 1;
+}
+.left-content img{
+  width: 100%;
 }
 .left-content h3{
   font-weight: 700;
@@ -25,6 +33,7 @@ body{
   align-items: center;
   flex-basis: 40%;
   display: flex;
+  flex-shrink: 1;
 }
 .right-content-carrier{
   width: 60%;
@@ -32,6 +41,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 1;
 }
 .right-content-carrier h1{
   width: 100%;
@@ -124,5 +134,10 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+@media(max-width: 950px){
+  .container{
+    flex-direction: column;
   }
 }
