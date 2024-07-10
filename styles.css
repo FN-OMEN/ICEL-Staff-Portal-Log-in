@@ -1,0 +1,113 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.container{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 100px;
+}
+.header{
+  width: 80%;
+  margin: 30px 0 0 60px;
+}
+.left-content{
+  align-items: center;
+  text-align: center;
+  flex-basis: 80%;
+}
+.left-content h3{
+  font-weight: 700;
+  color: rgb(22, 182, 102);
+}
+.right-content{
+  align-items: center;
+  text-align: center;
+  flex-basis: 55%;
+  display: flex;
+}
+.right-container{
+  width: 65%;
+  text-align: left;
+  vertical-align: top;
+  margin-top: -40px;
+}
+.right-content .fa-solid{
+  font-size: 70px;
+  margin-bottom: 30px
+}
+.right-content h1{
+  color: rgb(22, 182, 102);
+  font-weight: 600;
+  vertical-align: top;
+}
+.username{
+  padding: 10px 0 10px 20px;
+  width: 310px;
+  border-radius: 3px;
+  border: 1px solid rgb(158, 158, 167);
+  color:  rgb(158, 158, 167);
+}
+.username::placeholder, .password::placeholder, .email::placeholder{
+  font-size: 14px;
+}
+.username:focus{
+  border: 1px solid rgb(22, 182, 102);
+  outline: none;
+}
+.email{
+  padding: 10px 0 10px 20px;
+  width: 310px;
+  border-radius: 3px;
+  border: 1px solid rgb(158, 158, 167);
+  color:  rgb(158, 158, 167);
+}
+.email:focus{
+  border: 1px solid rgb(22, 182, 102);
+  outline: none;
+}
+.password{
+  padding: 10px 0 10px 20px;
+  width: 310px;
+  border-radius: 3px;
+  border: 1px solid rgb(158, 158, 167);
+  color:  rgb(158, 158, 167);
+}
+.password:focus{
+  border: 1px solid rgb(22, 182, 102);
+  outline: none;
+}
+.call-to-action{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.checkbox{
+  font-size: 13px;
+  vertical-align: middle;
+  margin: auto;
+  color:  rgb(158, 158, 167);
+}
+.forgot-password{
+  font-size: 13px;
+  color: rgb(22, 182, 102);
+}
+.log-in-btn{
+  width: 328px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  background: #1967fd;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.log-in-btn:hover{
+  background: #0a4cfe;
+  transition: 0.5s ease-in-out;
+}
