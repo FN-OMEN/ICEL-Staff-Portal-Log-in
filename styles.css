@@ -24,7 +24,7 @@ body{
   color: rgb(22, 182, 102);
 }
 .right-content{
-  align-items: center;
+  text-align: left;
   flex-basis: 55%;
   display: flex;
 }
@@ -110,7 +110,7 @@ body{
   background: #0a4cfe;
   transition: 0.5s ease-in-out;
 }
-.user, form, .call-to-action{
+.user, form{
   width: 100%;
   text-align: center;
 }
