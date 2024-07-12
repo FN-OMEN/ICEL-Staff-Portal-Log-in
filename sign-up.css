@@ -95,7 +95,7 @@ body{
 }
 .email{
   padding: 10px 0 10px 35px;
-  width: 90%;
+  width: 88%;
   border: none;
   border-bottom: 2px solid rgb(22, 182, 102);
   color:  rgb(158, 158, 167);
@@ -103,7 +103,7 @@ body{
 }
 .password{
   padding: 10px 0 10px 35px;
-  width: 90%;
+  width: 88%;
   border: none;
   border-bottom: 2px solid rgb(22, 182, 102);
   color:  rgb(158, 158, 167);
@@ -159,6 +159,12 @@ body{
   top: 16%;
   left: 3%;
   transform: translateY(-4%)
+}
+.input-box .fa-regular{
+  position: absolute;
+  top: 17%;
+  left: 90%;
+  transform: translateY(-5%)
 }
 @media(min-width: 1450px){
   .container{
