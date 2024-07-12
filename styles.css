@@ -45,6 +45,7 @@ body{
   align-items: center;
   flex-basis: 100%;
   display: flex;
+  flex-shrink: 1;
 }
 .right-content-carrier{
   width: 65%;
@@ -149,7 +150,7 @@ body{
 
   }
   .left-content img{
-    width: 50%;
+    width: 100%;
   }
 }
 @media(max-width: 750px){
