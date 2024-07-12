@@ -65,7 +65,7 @@ body{
   width: 100%;
 }
 .username{
-  padding: 10px 0 10px 20px;
+  padding: 10px 0 10px 35px;
   width: 310px;
   border-radius: 3px;
   border: 1px solid rgb(158, 158, 167);
@@ -79,8 +79,8 @@ body{
   outline: none;
 }
 .email{
-  padding: 10px 0 10px 20px;
-  width: 310px;
+  padding: 10px 0 10px 35px;
+  width: 90%;
   border-radius: 3px;
   border: 1px solid rgb(158, 158, 167);
   color:  rgb(158, 158, 167);
@@ -90,8 +90,8 @@ body{
   outline: none;
 }
 .password{
-  padding: 10px 0 10px 20px;
-  width: 310px;
+  padding: 10px 0 10px 35px;
+  width: 90%;
   border-radius: 3px;
   border: 1px solid rgb(158, 158, 167);
   color:  rgb(158, 158, 167);
@@ -140,6 +140,15 @@ body{
   font-size: 14px;
   color: rgb(22, 182, 102);
   text-align: center;
+}
+.input-box{
+  position: relative;
+}
+.input-box .fa-solid{
+  position: absolute;
+  top: 16%;
+  left: 3%;
+  transform: translateY(-4%)
 }
 @media(min-width: 1450px){
   .container{
