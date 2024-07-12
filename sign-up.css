@@ -36,9 +36,21 @@ body{
   align-items: center;
   text-align: center;
 }
+.description{
+  text-align: center;
+  margin: 0px 8px;
+}
 .left-content h3{
   font-weight: 700;
   color: rgb(22, 182, 102);
+  text-align: center;
+  margin-bottom: 0;
+}
+.sign{
+  font-weight: 700;
+  color: rgb(22, 182, 102);
+  margin-bottom: 10px;
+  margin-top: 8px;
   text-align: center;
 }
 .right-content{
@@ -68,33 +80,33 @@ body{
 .username{
   padding: 10px 0 10px 35px;
   width: 310px;
-  border-radius: 3px;
-  border: 1px solid rgb(158, 158, 167);
+  border: none;
+  border-bottom: 2px solid rgb(22, 182, 102);
   color:  rgb(158, 158, 167);
+  font-size: 16px;
 }
 .username::placeholder, .password::placeholder, .email::placeholder{
   font-size: 14px;
   font-weight: 200;
 }
 .username:focus, .email:focus, .password:focus{
-  border: 2px solid rgb(22, 182, 102);
   outline: none;
-  box-shadow: 0px 0px 8px 0px  rgb(22, 182, 102);
-  transition: .5s;
 }
 .email{
   padding: 10px 0 10px 35px;
   width: 90%;
-  border-radius: 3px;
-  border: 1px solid rgb(158, 158, 167);
+  border: none;
+  border-bottom: 2px solid rgb(22, 182, 102);
   color:  rgb(158, 158, 167);
+  font-size: 16px;
 }
 .password{
   padding: 10px 0 10px 35px;
   width: 90%;
-  border-radius: 3px;
-  border: 1px solid rgb(158, 158, 167);
+  border: none;
+  border-bottom: 2px solid rgb(22, 182, 102);
   color:  rgb(158, 158, 167);
+  font-size: 16px;
 }
 .call-to-action{
   display: flex;
@@ -123,13 +135,6 @@ body{
   border-radius: 3px;
   padding: 15px 0;
   cursor: pointer;
-  margin-bottom: 20px;
-}
-.sign-up-link{
-  font-size: 14px;
-  font-weight: bold;
-  color: rgb(22, 182, 102);
-  text-decoration: none;
 }
 .log-in-btn:hover{
   background: #0a4cfe;
@@ -194,5 +199,11 @@ body{
   }
   .username:focus, .email:focus, .password:focus{
     box-shadow: none;
+  }
+  .log-in-btn{
+    margin-bottom: 30px;
+  }
+  .description .fa-solid{
+    transform: rotate(90deg);
   }
 }
