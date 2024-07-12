@@ -73,10 +73,13 @@ body{
 }
 .username::placeholder, .password::placeholder, .email::placeholder{
   font-size: 14px;
+  font-weight: 200;
 }
-.username:focus{
+.username:focus, .email:focus, .password:focus{
   border: 1px solid rgb(22, 182, 102);
   outline: none;
+  box-shadow: 0px 0px 8px 0px  rgb(22, 182, 102);
+  transition: .5s;
 }
 .email{
   padding: 10px 0 10px 35px;
@@ -85,20 +88,12 @@ body{
   border: 1px solid rgb(158, 158, 167);
   color:  rgb(158, 158, 167);
 }
-.email:focus{
-  border: 1px solid rgb(22, 182, 102);
-  outline: none;
-}
 .password{
   padding: 10px 0 10px 35px;
   width: 90%;
   border-radius: 3px;
   border: 1px solid rgb(158, 158, 167);
   color:  rgb(158, 158, 167);
-}
-.password:focus{
-  border: 1px solid rgb(22, 182, 102);
-  outline: none;
 }
 .call-to-action{
   display: flex;
@@ -188,5 +183,8 @@ body{
   }
   .user{
     display: none;
+  }
+  .username:focus, .email:focus, .password:focus{
+    box-shadow: none;
   }
 }
