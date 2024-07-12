@@ -130,6 +130,7 @@ body{
   font-weight: bold;
   color: rgb(22, 182, 102);
   text-decoration: none;
+  margin-top: 18px;
 }
 .log-in-btn:hover{
   background: #0a4cfe;
