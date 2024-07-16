@@ -15,8 +15,13 @@ else {
 }
 
 function passwordValidation() {
-  let password = document.getElementById("password").value;
-  console.log(password)
+  let password = document.getElementById("password");
+  let passwordValue = password.value
+  let errorMessage = document.querySelector(".error-message")
+  if (passwordValue.length < 8) {
+    errorMessage.textContent = "Password is less than 8 characters"
+    password.classList.add("error")
+  }
 }
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector(".log-in-btn").addEventListener('click', function (event) {

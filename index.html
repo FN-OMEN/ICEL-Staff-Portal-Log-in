@@ -37,11 +37,11 @@
         <form>
           <div class="input-box">
             <i class="fa-solid fa-user" style="color: #16b666;"></i>
-            <input class="username" type="text" placeholder="User name"><br><br>
+            <input class="username" type="text" placeholder="User name" required><br><br>
           </div>
           <div class="input-box">
             <i class="fa-solid fa-envelope" style="color: #16b666;"></i>
-            <input class="email" type="email" placeholder="Email"><br><br>
+            <input class="email" type="email" placeholder="Email" required><br><br>
           </div>
           <div class="input-box">
             <i class="fa-solid fa-lock" style="color: #16b666;"></i>
@@ -54,9 +54,10 @@
               <span class="checkbox">Keep me signed in</span>
             </div>
             <div>
-              <span class="forgot-password">Forgot password?</span><br><br>
+              <span class="forgot-password">Forgot password?</span>
             </div>
           </div>
+          <p class ="error-message"></p>
           <button class="log-in-btn" type="button" onclick="passwordValidation()"
           >Log In</button><br>
           <p class="account">Don't have an account? <a class="sign-up-link" href="sign-up.html"><b>Sign up</b></a> here</p>
