@@ -37,7 +37,7 @@ function togglePassword2() {
     let passwordValue2 = password2.value
     let errorMessage = document.querySelector(".error-message")
 
-    if (passwordValue < 8 && passwordValue < 1) {
+    if (passwordValue < 8 && passwordValue > 1) {
       errorMessage.textContent = "Password is less than 8 characters"
       password.classList.add("error")
     }
