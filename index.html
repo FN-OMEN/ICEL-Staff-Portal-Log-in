@@ -46,7 +46,8 @@
           <div class="input-box">
             <i class="fa-solid fa-lock" style="color: #16b666;"></i>
             <input id="password" class="password" type="password" placeholder="Password">
-            <i id="eyeicon" class="fa-regular fa-eye" style="color: #16b666;" onclick="togglePassword()"></i><br><br>
+            <i id="eyeicon" class="fa-regular fa-eye" style="color: #16b666;" onclick="togglePassword()"></i><br>
+            <p class ="error-message"></p>
           </div>
           <div class="call-to-action">
             <div>
@@ -57,9 +58,8 @@
               <span class="forgot-password">Forgot password?</span>
             </div>
           </div>
-          <p class ="error-message"></p>
-          <button class="log-in-btn" type="button" onclick="passwordValidation()"
-          >Log In</button><br>
+          <button class="log-in-btn" type="submit" onclick="passwordValidation()"
+          >Log In</button>
           <p class="account">Don't have an account? <a class="sign-up-link" href="sign-up.html"><b>Sign up</b></a> here</p>
         </form>
       </div>

@@ -101,7 +101,7 @@ body{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 30px;
+  margin-bottom: 15px;
   justify-content: space-between;
 }
 .checkbox{
@@ -124,7 +124,7 @@ body{
   border-radius: 3px;
   padding: 15px 0;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .sign-up-link{
   font-size: 14px;
@@ -166,6 +166,7 @@ body{
   font-size: 14px;
   text-align: center;
   margin-top: 8px;
+  margin-bottom: 0;
   font-weight: 500;
 }
 .error{
