@@ -101,6 +101,7 @@ body{
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-top: 10px;
   margin-bottom: 15px;
   justify-content: space-between;
 }
@@ -146,26 +147,30 @@ body{
   color: rgb(22, 182, 102);
   text-align: center;
 }
-.input-box{
+.input-box, .input-box-2{
   position: relative;
 }
-.input-box .fa-solid {
+.input-box-2 .fa-solid {
   position: absolute;
-  top: 16.4%;
+  top: 28%;
   left: 3%;
   transform: translateY(-4%)
 }
-.input-box .fa-regular{
+.input-box .fa-solid {
   position: absolute;
-  top: 17%;
+  top: 17.5%;
+  left: 3%;
+  transform: translateY(-4%)
+}
+.input-box-2 .fa-regular{
+  position: absolute;
+  top: 30%;
   left: 90%;
   transform: translateY(-5%)
 }
 .error-message{
   color: red;
   font-size: 14px;
-  margin-top: 8px;
-  margin-bottom: 0;
   font-weight: 500;
 }
 .error{

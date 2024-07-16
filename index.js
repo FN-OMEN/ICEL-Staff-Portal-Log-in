@@ -18,8 +18,12 @@ function passwordValidation() {
   let password = document.getElementById("password");
   let passwordValue = password.value
   let errorMessage = document.querySelector(".error-message")
-  if (passwordValue.length < 8) {
+  if (passwordValue.length < 8 && passwordValue.length > 1) {
     errorMessage.textContent = "Password is less than 8 characters"
+    password.classList.add("error")
+  }
+  else if (passwordValue === "") {
+    errorMessage.textContent = "Enter your Password"
     password.classList.add("error")
   }
   else {
