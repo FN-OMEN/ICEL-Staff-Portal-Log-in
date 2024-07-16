@@ -22,6 +22,10 @@ function passwordValidation() {
     errorMessage.textContent = "Password is less than 8 characters"
     password.classList.add("error")
   }
+  else {
+    errorMessage.textContent = ""
+    password.classList.remove("error")
+  }
 }
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector(".log-in-btn").addEventListener('click', function (event) {
