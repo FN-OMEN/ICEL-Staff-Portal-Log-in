@@ -15,8 +15,17 @@ else {
 }
 
 function passwordValidation() {
-  let password1 = document.querySelector(".password").value;
-  let passwordValue = password1
-
-console.log(passwordValue)
+  let password = document.getElementById("password").value;
+  console.log(password)
 }
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector(".log-in-btn").addEventListener('click', function (event) {
+    event.preventDefault()
+  })
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector("form").addEventListener('submit', function (event) {
+    event.preventDefault()
+  })
+})
