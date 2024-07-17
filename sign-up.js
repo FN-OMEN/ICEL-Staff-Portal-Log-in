@@ -45,9 +45,11 @@ function togglePassword2() {
     else if (passwordValue.length < 8 && passwordValue.length < 8) {
       errorMessage.textContent = "Password is less than 8 characters"
       password.classList.add("error")
+      password2.classList.remove("error")
     }
     else if (passwordValue2.length < 8 && passwordValue2.length < 8) {
       errorMessage.textContent = "Password is less than 8 characters"
+      password.classList.remove("error")
       password2.classList.add("error")
     }
     else if (passwordValue !== passwordValue2) {

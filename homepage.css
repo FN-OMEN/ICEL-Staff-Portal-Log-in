@@ -1,0 +1,54 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  height: 100vh;
+}
+.header{
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/oil-background.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 6%;
+}
+.navigation-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.navigation-links-left img{
+  width: 150px;
+}
+.navigation-links-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-links-right ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+.navigation-links-right ul li::after{
+  content: "";
+  height: 2px;
+  width: 0%;
+  display: block;
+  background: #1967fd;
+}
+.navigation-links-right ul li:hover::after{
+  width: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+.navigation-links-right ul li a{
+
+}
