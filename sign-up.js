@@ -37,9 +37,18 @@ function togglePassword2() {
     let passwordValue2 = password2.value
     let errorMessage = document.querySelector(".error-message")
 
-    if (passwordValue < 8 && passwordValue > 1) {
+    if (passwordValue.length < 8 && passwordValue.length < 8 && passwordValue2.length < 8 && passwordValue2.length < 8) {
       errorMessage.textContent = "Password is less than 8 characters"
       password.classList.add("error")
+      password2.classList.add("error")
+    }
+    else if (passwordValue.length < 8 && passwordValue.length < 8) {
+      errorMessage.textContent = "Password is less than 8 characters"
+      password.classList.add("error")
+    }
+    else if (passwordValue2.length < 8 && passwordValue2.length < 8) {
+      errorMessage.textContent = "Password is less than 8 characters"
+      password2.classList.add("error")
     }
     else if (passwordValue !== passwordValue2) {
       errorMessage.textContent = "Password does not match!"
@@ -53,6 +62,7 @@ function togglePassword2() {
       errorMessage.textContent = ""
       password.classList.remove("error")
       password2.classList.remove("error")
+      window.location = "homepage.html"
     }
   }
   document.addEventListener('DOMContentLoaded', function () {

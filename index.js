@@ -29,6 +29,7 @@ function passwordValidation() {
   else {
     errorMessage.textContent = ""
     password.classList.remove("error")
+    window.location = "homepage.html"
   }
 }
 document.addEventListener('DOMContentLoaded', function () {
