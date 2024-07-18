@@ -70,7 +70,7 @@ nav .fa-solid{
   margin-bottom: 0;
 }
 .content p{
-  font-size: 15px;
+  font-size: 17px;
   width: 65%;
 }
 .button-container{
@@ -94,7 +94,6 @@ nav .fa-solid{
   background:  rgb(22, 182, 102);
   border: 1px solid  rgb(22, 182, 102);
   transition: 1s ease-in-out;
-  transform: scale(1.15)
 }
 @media(max-width: 800px){
   .header{
@@ -131,13 +130,11 @@ nav .fa-solid{
     display: none;
   }
   .content h1{
-    font-size: 30px;
+    font-size: 35px;
   }
   .content p{
-    font-size: 10px;
+    font-size: 19px;
     width: 100%;
-  }
-  .button-container{
   }
   .fill-btn{
     font-size: 12px;
