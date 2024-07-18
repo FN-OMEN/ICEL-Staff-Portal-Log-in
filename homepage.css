@@ -93,7 +93,8 @@ nav .fa-solid{
 .fill-btn:hover{
   background:  rgb(22, 182, 102);
   border: 1px solid  rgb(22, 182, 102);
-  transition: 1s;
+  transition: 1s ease-in-out;
+  transform: scale(1.15)
 }
 @media(max-width: 800px){
   .header{
@@ -146,7 +147,7 @@ nav .fa-solid{
     margin-bottom: 0;
   }
   .content p{
-    font-size: 30px;
+    font-size: 23px;
     width: 80%;
   }
 }
