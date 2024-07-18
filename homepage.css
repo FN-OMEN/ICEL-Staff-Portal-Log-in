@@ -180,4 +180,10 @@ nav .fa-solid{
     margin-bottom: 0;
     margin-top: 220px;
   }
+  .footer i:hover{
+    color: rgb(22, 182, 102);
+    transform: scale(2.0);
+    transition: 0.5s;
+    padding-left: 10px;
+  }
 }
