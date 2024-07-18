@@ -130,11 +130,12 @@ nav .fa-solid{
     display: none;
   }
   .content h1{
-    font-size: 35px;
+    font-size: 40px;
   }
   .content p{
     font-size: 17.5px;
     width: 100%;
+    margin-top: 0;
   }
   .fill-btn{
     font-size: 12px;
