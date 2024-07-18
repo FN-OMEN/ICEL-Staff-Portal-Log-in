@@ -63,11 +63,12 @@ nav .fa-solid{
   text-align: left;
   margin: auto;
   color: white;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .content h1{
   font-size: 60px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .content p{
   font-size: 17px;
@@ -94,6 +95,15 @@ nav .fa-solid{
   background:  rgb(22, 182, 102);
   border: 1px solid  rgb(22, 182, 102);
   transition: 1s ease-in-out;
+}
+.footer{
+  text-align: center;
+  margin: 40px;
+
+}
+.footer .fa-brands{
+  font-size: 15px;
+  padding-right: 10px;
 }
 @media(max-width: 800px){
   .header{
