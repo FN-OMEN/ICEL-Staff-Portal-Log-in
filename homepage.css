@@ -137,6 +137,12 @@ nav .fa-solid{
     font-size: 10px;
     width: 100%;
   }
+  .button-container{
+  }
+  .fill-btn{
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 }
 @media(min-width: 1450px){
   .content{
