@@ -28,8 +28,6 @@ nav{
   width: 150px;
 }
 .navigation-links-right{
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .navigation-links-right ul li{
@@ -37,6 +35,9 @@ nav{
   display: inline-block;
   padding: 8px 12px;
   color: white;
+}
+.navigation-links-right ul{
+  padding-left: 0;
 }
 .navigation-links-right ul li::after{
   content: "";
@@ -52,4 +53,39 @@ nav{
 }
 .navigation-links-right ul li a{
 
+}
+nav .fa-solid{
+  display: none;
+}
+@media(max-width: 800px){
+  .navigation-links-right ul li{
+    display: block;
+}
+  .navigation-links-right{
+    position: fixed;
+    height: 100vh;
+    background: rgba(10, 76, 254, 1);
+    top: -100vh;
+    right: 0;
+    left: 0;
+    text-align: left;
+    transition: 1.25s;
+  }
+  nav .fa-solid{
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+  }
+  .navigation-links-right ul{
+    padding: 30px;
+    text-align: center;
+    margin: 0;
+  }
+  .navigation-links-right ul li{
+    padding: 30px 0;
+  }
+  .navigation-links-right ul li::after{
+    display: none;
+  }
 }
