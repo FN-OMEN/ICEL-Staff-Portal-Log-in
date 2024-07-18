@@ -108,3 +108,12 @@ nav .fa-solid{
     width: 100%;
   }
 }
+@media(min-width: 1450px){
+  .content h1{
+    font-size: 45px;
+  }
+  .content p{
+    font-size: 20px;
+    width: 100%;
+  }
+}
