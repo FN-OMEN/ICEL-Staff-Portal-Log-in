@@ -109,7 +109,7 @@ nav .fa-solid{
 .footer i:hover{
   color: rgb(22, 182, 102);
   transform: scale(2.0);
-  transition: 0.5s;
+  transition: 0.5s ease;
   padding-left: 10px;
 }
 @media(max-width: 800px){
@@ -175,6 +175,9 @@ nav .fa-solid{
   .content p{
     font-size: 23px;
     width: 80%;
+  }
+  .fill-btn{
+    font-size: 20px;
   }
   .footer{
     margin-bottom: 0;
