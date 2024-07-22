@@ -144,9 +144,29 @@ form textarea{
   border: 2px solid rgb(22, 182, 102);
   font-weight: 500;
   overflow: auto;
+  text-indent: 5px;
 }
 form textarea:focus{
   border: 2px solid rgba(3, 18, 39, 0.911);
+  transition: 0.5s;
+}
+.submission{
+  margin-bottom: 25px;
+}
+.submission button{
+  padding: 12px 30px;
+  font-size: 15px;
+  background: rgb(22, 182, 102);
+  border: 2px solid rgba(3, 18, 39, 0.911);
+  border-radius: 5px;
+  color: rgba(3, 18, 39, 0.911);
+  font-weight: 500;
+  cursor: pointer;
+}
+.submission button:hover{
+  background: rgba(3, 18, 39, 0.911);
+  border: 2px solid rgb(22, 182, 102);
+  color: rgb(22, 182, 102);
   transition: 0.5s;
 }
 @media(max-width: 600px){
