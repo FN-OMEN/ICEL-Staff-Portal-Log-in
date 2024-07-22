@@ -163,7 +163,7 @@ form textarea:focus{
     flex-direction: column;
   }
   form textarea{
-    width: 40%;
+    width: 80%;
   }
 }
 @media(min-width: 1450px){
