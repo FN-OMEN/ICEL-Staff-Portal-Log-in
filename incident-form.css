@@ -161,7 +161,9 @@ form textarea:focus{
   .mid-body-content-2 form{
     display: flex;
     flex-direction: column;
- 
+  }
+  form textarea{
+    width: 40%;
   }
 }
 @media(min-width: 1450px){
