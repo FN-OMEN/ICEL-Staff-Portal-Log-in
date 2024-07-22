@@ -134,6 +134,20 @@
 }
 .mid-body-content-2 input:focus{
   outline: none;
+  border-bottom: 2px solid rgba(3, 18, 39, 0.911);
+  transition: 0.5s;
+}
+form textarea{
+  margin-top: 8px;
+  resize: none;
+  outline: none;
+  border: 2px solid rgb(22, 182, 102);
+  font-weight: 500;
+  overflow: auto;
+}
+form textarea:focus{
+  border: 2px solid rgba(3, 18, 39, 0.911);
+  transition: 0.5s;
 }
 @media(max-width: 600px){
   .mid-body-content{
