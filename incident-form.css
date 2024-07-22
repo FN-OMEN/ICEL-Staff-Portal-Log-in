@@ -7,6 +7,7 @@
 .header{
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 25vh;
   width: 100%;
 }
@@ -84,6 +85,10 @@
   .mid-body-content{
     display: flex;
     flex-direction: column;
+  }
+  .header img{
+    width: 250px;
+    padding-top: 7%;
   }
 }
 @media(min-width: 1450px){
