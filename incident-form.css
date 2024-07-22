@@ -112,7 +112,7 @@
 .mid-body-content-2 form{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 100px;
+  column-gap: 180px;
   row-gap: 20px;
 }
 .mid-body-content-2 p{
