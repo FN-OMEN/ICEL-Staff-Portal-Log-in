@@ -170,7 +170,7 @@ form textarea:focus{
   color: rgb(22, 182, 102);
   transition: 0.5s;
 }
-@media(max-width: 600px){
+@media(max-width: 800px){
   .mid-body-content{
     display: flex;
     flex-direction: column;
