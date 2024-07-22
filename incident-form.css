@@ -152,6 +152,7 @@ form textarea:focus{
 }
 .submission{
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 .submission button{
   padding: 12px 30px;
