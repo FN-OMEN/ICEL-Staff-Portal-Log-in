@@ -237,6 +237,9 @@ form textarea:focus{
     width: 90%;
   }
   #list{
+    width: 90%;
+  }
+  .options{
     width: 100%;
   }
 }
