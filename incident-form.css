@@ -233,8 +233,8 @@ form textarea:focus{
   #list{
     width: 90%;
   }
-  .selector{
-    width: 90%;
+  .options{
+    width: 95%;
   }
 }
 @media(min-width: 1450px){
