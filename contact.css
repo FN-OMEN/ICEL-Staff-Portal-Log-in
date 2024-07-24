@@ -41,6 +41,7 @@ body {
   border-radius: 10px;
   width: 90%;
   text-align: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -50,6 +51,7 @@ body {
   flex-direction: column;
   background-color: #fff;
   text-align: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
