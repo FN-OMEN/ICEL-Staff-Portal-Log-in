@@ -148,6 +148,7 @@ form label, input{
     font-size: 15px;
   }
   button{
+    margin-top: 15px;
     font-size: 20px;
   }
 }
