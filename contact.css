@@ -147,4 +147,7 @@ form label, input{
   input{
     font-size: 15px;
   }
+  button{
+    font-size: 20px;
+  }
 }
