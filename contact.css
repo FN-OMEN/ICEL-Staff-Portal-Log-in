@@ -198,4 +198,7 @@ form{
   form{
     padding-top: 30px;
   }
+  .right img{
+    width: 1000px;
+  }
 }
