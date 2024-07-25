@@ -97,10 +97,12 @@ input, textarea {
 textarea{
   resize: none;
   outline: none;
+  font-family: Poppins;
 }
+
 textarea::placeholder{
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   opacity: 0.6;
   color: gray;
 }
