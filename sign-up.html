@@ -37,19 +37,19 @@
           <form>
             <div class="input-box">
               <i class="fa-solid fa-user" style="color: #16b666;"></i>
-              <input class="username" type="text" placeholder="Enter a User name"><br><br>
+              <input class="username" type="text" placeholder="Enter a User name" required><br><br>
             </div>
             <div class="input-box">
               <i class="fa-solid fa-envelope" style="color: #16b666;"></i>
-              <input class="email" type="email" placeholder="Enter email"><br><br>
+              <input class="email" type="email" value = "@imperialcrestenergy.com" required><br><br>
             </div>
             <div class="input-box">
               <i class="fa-solid fa-lock" style="color: #16b666;"></i>
-              <input id="password" class="password" type="password" placeholder="Create password"><i id="eyeicon" class="fa-regular fa-eye" style="color: #16b666;" onclick="togglePassword()"></i><br><br>
+              <input id="password" class="password" type="password" placeholder="Create password" required><i id="eyeicon" class="fa-regular fa-eye" style="color: #16b666;" onclick="togglePassword()"></i><br><br>
             </div>
             <div class="input-box-2">
               <i class="fa-solid fa-lock" style="color: #16b666;"></i>
-              <input id="password-2" class="password" type="password" placeholder="Confirm password"><i onclick="togglePassword2()" id="eyeicon-2" class="fa-regular fa-eye" style="color: #16b666;"></i><br>
+              <input id="password-2" class="password" type="password" placeholder="Confirm password" required><i onclick="togglePassword2()" id="eyeicon-2" class="fa-regular fa-eye" style="color: #16b666;"></i><br>
             </div>
               <p class="error-message"></p>
               <button class="log-in-btn" onclick="passwordValidation()"

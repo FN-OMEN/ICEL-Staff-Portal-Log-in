@@ -64,7 +64,7 @@ function togglePassword2() {
       errorMessage.textContent = ""
       password.classList.remove("error")
       password2.classList.remove("error")
-      window.location = "homepage.html"
+      window.location = "index.html"
     }
   }
   document.addEventListener('DOMContentLoaded', function () {
