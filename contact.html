@@ -22,7 +22,7 @@
         <div class="info">
           <i class="fa-solid fa-phone"></i>
           <p class="contact-subject">Let's Talk</p>
-          <span>+234 802 2211 1232</span>
+          <span>+234 802 211 1232</span>
         </div>
         <div class="info">
           <i class="fa-solid fa-envelope"></i>
@@ -35,14 +35,22 @@
       <h2>Send Us A Message</h2>
       <form id="contactForm">
         <label for="firstName">Tell us your name *</label>
-        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>  
-        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-        <label for="email">Enter your email *</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        <label for="phone">Enter your phone number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
-        <label for="message">Message</label>
-        <input type="tel" id="Message" name="Message" placeholder="Write us a message">
+        <div class="input-holder">
+          <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        </div>
+        <div>
+          <label for="email">Enter your email *</label>
+          <input type="email" id="email" name="email" placeholder="Eg. itsupport@imperialcrestenergy.com" required>
+        </div>
+        <div>
+          <label for="phone">Enter your phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Eg. +234 805 356 4556">
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <input type="tel" id="Message" name="Message" placeholder="Write us a message">
+        </div>
         <div class="submit-btn">
             <button type="submit">SEND MESSAGE</button>
         </div>
