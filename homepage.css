@@ -7,7 +7,7 @@ body{
 }
 .header{
   width: 100%;
-  background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)), url(images/oil-background.jpg);
+  background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url(images/oil-background.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -117,6 +117,12 @@ nav .fa-solid{
   .header{
     height: 100%;
     padding-bottom: 20px;
+  }
+  .header img{
+    padding-left: 40%;
+  }
+  .header p {
+    padding-left: 20%;
   }
   .navigation-links-right ul li{
     display: block;
