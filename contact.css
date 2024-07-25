@@ -200,5 +200,6 @@ form{
   }
   .right img{
     width: 1000px;
+    right: -600px;
   }
 }
