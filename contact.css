@@ -99,7 +99,10 @@ textarea{
   outline: none;
   font-family: Poppins;
 }
-
+.info a{
+  text-decoration: none;
+  color: rgb(22, 182, 102);
+}
 textarea::placeholder{
   font-size: 15px;
   font-weight: 600;
