@@ -48,7 +48,6 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   background-color: #fff;
   text-align: center;
   justify-content: center;
@@ -58,7 +57,7 @@ body {
 h2 {
   text-align: center;
   font-weight: 500;
-
+  margin: 0;
 }
 label {
   display: block;
@@ -120,12 +119,32 @@ form{
   flex-direction: column;
   width: 60%;
   text-align: center;
-  margin-top: 0;
-  padding: 0px 50px 50px 50px;
+  margin-top: 0px;
+  padding: 30px 50px 0px 50px;
 }
 form label, input{
   width: 100%;
 }
 .submit-btn{
   text-align: left;
+}
+@media(min-width: 1450px){
+  .left p{
+    font-size: 22px;
+  }
+  .left span{
+    font-size: 18px;
+  }
+  .left i{
+    font-size: 19px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .right label{
+    font-size: 19px;
+  }
+  input{
+    font-size: 15px;
+  }
 }
