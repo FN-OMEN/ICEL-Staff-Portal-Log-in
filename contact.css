@@ -7,13 +7,11 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0;
-  overflow: hidden;
+
 }
 .container {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 100vh;
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -32,9 +30,6 @@ body {
   color: white;
   border-right: 1px solid #ccc;
   height: 100vh;
-}
-.right{
-  padding-top: 48px;
 }
 .left .info-container {
   display: flex;
@@ -57,13 +52,13 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 h2 {
   text-align: center;
   font-weight: 500;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 label {
   display: block;
@@ -123,12 +118,13 @@ button:hover {
 form{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 60%;
   text-align: center;
   margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0px 50px 50px 50px;
+}
+form label, input{
+  width: 100%;
 }
 .submit-btn{
   text-align: left;
