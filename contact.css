@@ -152,7 +152,7 @@ form{
   width: 60%;
   text-align: center;
   margin-top: 0px;
-  padding: 30px 50px 0px 50px;
+  padding: 10px 50px 0px 50px;
 }
 .submit-btn{
   width: 100%;
@@ -180,5 +180,8 @@ form{
   button{
     margin-top: 25px;
     font-size: 17px;
+  }
+  form{
+    padding-top: 30px;
   }
 }
