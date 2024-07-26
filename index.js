@@ -74,6 +74,7 @@ function validateForm() {
   if (isUsernameValid && isEmailValid && isPasswordValid) {
     window.location = "homepage.html";
   }
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
