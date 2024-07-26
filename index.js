@@ -22,7 +22,12 @@ function usernameValidation() {
     errorMessage.textContent = "Enter your Username";
     username.classList.add("error");
     return false;
-  } else {
+  }
+  else if (usernameValue <= 5) {
+    errorMessage.textContent = "Username must be at least 5 characters long";
+    return false;
+  }
+  else {
     errorMessage.textContent = "";
     username.classList.remove("error");
     return true;
