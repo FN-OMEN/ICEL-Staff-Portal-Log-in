@@ -1,9 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  height: 100vh;
   margin: 0;
-  display: flex;
   padding: 0;
 
 }
@@ -13,22 +11,21 @@ body {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 100vh;
 }
 .left, .right {
   padding: 0px 20px 0 20px;
   width: 50%;
   display: flex;
-  height: 100vh;
-  flex-direction: column;
   text-align: center;
   align-items: center;
+  flex: 1;
 }
 .left {
   background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/office-building.jpg) no-repeat center center;
   background-size: cover;
   color: white;
   border-right: 1px solid #ccc;
-  height: 100vh;
   justify-content: center;
 }
 .left .info-container {
@@ -44,20 +41,17 @@ body {
   margin-right: auto;
 }
 .right {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #fff;
   text-align: center;
   align-items: center;
-  margin: auto;
   justify-content: center;
   position: relative;
-  z-index: 100;
 }
 .right img{
   position: fixed;
-  right: -35%;
+  right: -38%;
   bottom: 2%;
   z-index: 0;
   opacity: 0.7;
@@ -104,6 +98,7 @@ input, textarea {
   margin-bottom: 15px;
   box-sizing: border-box;
   outline: none;
+  background: transparent;
 }
 textarea{
   resize: none;
@@ -113,6 +108,7 @@ textarea{
 .info a{
   text-decoration: none;
   color: rgb(22, 182, 102);
+  font-size: 15px;
 }
 textarea::placeholder{
   font-size: 15px;
@@ -169,6 +165,7 @@ form{
   text-align: center;
   margin-top: 0px;
   padding: 10px 50px 0px 50px;
+  z-index: 100;
 }
 .submit-btn{
   width: 100%;
@@ -204,5 +201,14 @@ form{
     width: 1000px;
     right: -35%;
     bottom: 0%;
+  }
+}
+@media(max-width: 1150px){
+  .right img{
+    display: none;
+  }
+  .container{
+    flex-direction: column;
+    width: 100%;
   }
 }
