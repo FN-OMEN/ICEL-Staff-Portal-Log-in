@@ -10,7 +10,7 @@ body{
   height: 100vh;
   background-position: center;
   background-size: cover;
-  height: 150vh;
+  height: 140vh;
 }
 nav{
   display: flex;
@@ -112,8 +112,8 @@ nav .fa-solid{
 }
 .footer{
   text-align: center;
-  margin: 40px;
-  margin-top: 80px;
+  margin: 0px;
+  margin-top: 100px;
 }
 .footer i{
   color: white;
