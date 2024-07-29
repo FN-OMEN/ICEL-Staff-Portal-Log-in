@@ -84,7 +84,17 @@ nav .fa-solid{
   margin-top: 50px;
 }
 .fill-btn{
-  flex: 0.35;
+  width: 100%;
+  padding: 12px 34px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid white;
+  background: transparent;
+  cursor: pointer;
+}
+.fill-btn-2{
+  width: 15%;
   padding: 12px 12px;
   color: white;
   font-size: 15px;
@@ -165,6 +175,11 @@ nav .fa-solid{
     padding: 0;
   }
   .fill-btn{
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  .fill-btn-2{
+    width: 100%;
     font-size: 12px;
     padding: 8px 12px;
   }
