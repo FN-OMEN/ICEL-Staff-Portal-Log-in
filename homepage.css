@@ -64,7 +64,6 @@ nav .fa-solid{
   text-align: left;
   margin: auto;
   color: white;
-  margin-top: 25px;
 }
 .content h1{
   font-size: 60px;
@@ -76,12 +75,14 @@ nav .fa-solid{
   width: 65%;
 }
 .button-container{
-  display: flex;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: 250px 250px 20%;
+  column-gap: 50px;
+  row-gap: 25px;
   width: 80%;
   text-align: left;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .fill-btn{
   padding: 12px 34px;
@@ -119,7 +120,7 @@ nav .fa-solid{
     padding-bottom: 20px;
   }
   .header img{
-    padding-left: 40%;
+    padding-left: 10%;
   }
   .header p {
     padding-left: 20%;
