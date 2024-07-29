@@ -76,16 +76,15 @@ nav .fa-solid{
 }
 .button-container{
   display: grid;
-  grid-template-columns: 250px 250px 20%;
-  column-gap: 50px;
-  row-gap: 25px;
+  grid-template-columns: 15% 20% 7% 16% 20%;
+  column-gap: 30px;
   width: 80%;
   text-align: left;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .fill-btn{
-  padding: 12px 34px;
+  padding: 12px 20px;
   color: white;
   font-size: 15px;
   font-weight: 500;
@@ -101,7 +100,7 @@ nav .fa-solid{
 .footer{
   text-align: center;
   margin: 40px;
-
+  margin-top: 80px;
 }
 .footer i{
   color: white;
