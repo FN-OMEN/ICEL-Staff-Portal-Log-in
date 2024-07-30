@@ -62,7 +62,6 @@ body {
   border-top-right-radius: 15px;
   margin-top: 97px;
   position: fixed;
-  top: -9px;
   left: -505px;
   transition: left 2s;
   height: calc(100vh - 97px); /* Adjust height to fit the screen */
