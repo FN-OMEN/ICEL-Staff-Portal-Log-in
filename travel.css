@@ -131,9 +131,9 @@ input[type="text"], input[type="date"] {
 }
 @media(min-width: 1450px){
   .navbar{
-    height: 7.5vh;
+    height: 11.3vh;
   }
   .icon{
-    padding-top: 2.5%;
+    padding-top: 3%;
   }
 }
