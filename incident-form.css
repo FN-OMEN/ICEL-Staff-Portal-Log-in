@@ -114,6 +114,7 @@
   border-bottom: 2px solid rgb(22, 182, 102);
   width: 42%;
   outline: none;
+  padding-left: 10%;
 }
 .content-2 input:focus, .content-1 input:focus, .content-4 input:focus{
   border-bottom: 2px solid rgba(3, 18, 39, 0.911);
