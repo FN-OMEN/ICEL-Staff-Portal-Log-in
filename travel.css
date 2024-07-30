@@ -124,6 +124,6 @@ input[type="text"], input[type="date"] {
 }
 @media(min-width: 1450px){
   .container {
-    top: 1px;
+    top: 24px;
   }
 }
