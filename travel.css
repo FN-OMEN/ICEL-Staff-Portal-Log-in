@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background: url('images/plane.jpg') no-repeat center center fixed;
+  background-size: cover;
+  flex-direction: column;
+}
+.navbar {
+  width: 100%;
+  background-color: #fcfcfc;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 15.9vh;
+  z-index: 100;
+}
+.navbar-holder{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 0 2% 2%;
+}
+.navbar-holder img {
+  height: 70px;
+}
+.navbar-holder a {
+  color: black;
+  padding: 2.35%;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar i {
+  font-size: 35px;
+}
+.container {
+  width: 400px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 15px;
+  margin-top: 97px;
+  position: absolute;
+  left: -505px;
+  transition: left 2s;
+  height: calc(100vh - 97px); /* Adjust height to fit the screen */
+  overflow-y: auto; /* Enable vertical scrolling */
+  z-index: 0;
+}
+header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+input[type="text"], input[type="date"] {
+  width: calc(100% - 10px);
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.submit-btn {
+  width: 50%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+.travelForm {
+  background-color: #5180b3;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.travelForm-btn {
+  padding: 20px;
+  background-color: #497099;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 36px;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.close i {
+  font-size: 24px;
+}
+.submit{
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
