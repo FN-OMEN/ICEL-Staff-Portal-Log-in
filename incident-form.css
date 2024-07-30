@@ -181,6 +181,9 @@
   font-size: 15px;
   width: 67%;
 }
+.incident-type h3{
+  margin-bottom: 7px;
+}
 .incident-type-1{
   display: block;
   margin-bottom: 6px;
