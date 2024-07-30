@@ -122,3 +122,8 @@ input[type="text"], input[type="date"] {
   text-align: center;
   margin: auto;
 }
+@media(min-width: 1450px){
+  .container {
+    top: 1px;
+  }
+}
