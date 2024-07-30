@@ -59,7 +59,7 @@ body {
   left: -505px;
   transition: left 2s;
   height: calc(100vh - 97px); /* Adjust height to fit the screen */
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow: auto; /* Enable vertical scrolling */
   z-index: 0;
 }
 header {
