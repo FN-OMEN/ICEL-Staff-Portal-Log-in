@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  height: 15vh;
+  height: 14.5vh;
   z-index: 100;
 }
 .navbar-holder{
