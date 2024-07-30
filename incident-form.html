@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="incident-form.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <title>Incident Report Form</title>
 </head>
 <body>
@@ -61,13 +62,18 @@
   <div class="mid-body-container">
     <div class="mid-body-content-2">
       <form>
-        <div class="form-content-1">
-          <p>Incident Type</p>
-          <label><input type="checkbox" name="incident-type" value="Accident"> Accident</label><br>
-          <label><input type="checkbox" name="incident-type" value="Near Miss"> Near Miss</label><br>
-          <label><input type="checkbox" name="incident-type" value="Unsafe Act"> Unsafe Act</label><br>
-          <label><input type="checkbox" name="incident-type" value="Unsafe Condition"> Unsafe Condition</label><br>
-          <label><input type="checkbox" name="incident-type" value="Positive behaviour"> Positive Behaviour</label>
+        <div class="incident-type">
+          <h3>Incident Type</h3>
+          <label>
+            <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Accident</label>
+          <label>
+            <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Near Miss</label>
+          <label>
+            <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Unsafe Act</label>
+          <label>
+            <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Unsafe Condition</label>
+            <label>
+              <input type="checkbox" class="radio" value="1" name="fooby[1][]" />Positive Behaviour</label>
         </div>
         <div class="form-content-2">
           <p>Location</p>
