@@ -365,7 +365,11 @@ form textarea:focus {
     font-size: 20px;
   }
   .content-2 input{
-    width: 75%;
+    width: 64.6%;
     padding-left: 35%;
+  }
+  .content-4 input{
+    width: 55%;
+    padding-left: 26%;
   }
 }
