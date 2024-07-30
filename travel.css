@@ -10,6 +10,11 @@ body {
   background-size: cover;
   flex-direction: column;
 }
+.content{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
 .navbar {
   width: 100%;
   background-color: #fcfcfc;
@@ -21,7 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  height: 14.5vh;
+  height: 15vh;
   z-index: 100;
 }
 .navbar-holder{
@@ -30,25 +35,13 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 2% 0 2% 2%;
+  padding: 1% 2%;
   height: 100%;
 }
 .navbar-holder img {
   height: 70px;
 }
 .navbar-holder a {
-  color: black;
-  padding: 2.35%;
-
-}
-.icon{
-  height: 100%;
-  padding-top: 4%;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-.icon:hover {
-  background-color: #ddd;
   color: black;
 }
 .navbar i {
@@ -62,6 +55,7 @@ body {
   border-top-right-radius: 15px;
   margin-top: 97px;
   position: fixed;
+  top: 20px;
   left: -505px;
   transition: left 2s;
   height: calc(100vh - 97px); /* Adjust height to fit the screen */
@@ -105,6 +99,7 @@ input[type="text"], input[type="date"] {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+
 }
 .travelForm-btn {
   padding: 20px;
@@ -133,7 +128,5 @@ input[type="text"], input[type="date"] {
   .navbar{
     height: 11.3vh;
   }
-  .icon{
-    padding-top: 3%;
-  }
+
 }
