@@ -101,6 +101,11 @@
   width: 60%;
   outline: none;
 }
+.content-1 input{
+  padding-left: 20%;
+  font-weight: 500;
+  color: rgba(3, 18, 39, 0.911);
+}
 .content-2 input{
   padding-left: 18% ;
 }
@@ -108,10 +113,9 @@
   border: none;
   border-bottom: 2px solid rgb(22, 182, 102);
   width: 42%;
-  padding-left: 100px;
   outline: none;
 }
-.content-2 input:focus{
+.content-2 input:focus, .content-1 input:focus, .content-4 input:focus{
   border-bottom: 2px solid rgba(3, 18, 39, 0.911);
   transition: 0.5s;
 }
@@ -177,12 +181,13 @@
 }
 .incident-type-1{
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 .incident-type label{
   display: inline-block;
   font-weight: 500;
   font-size: 16px;
+  margin-left: 10px;
 }
 .mid-body-content-2 input[type="text"] {
   width: 70%;
