@@ -1,22 +1,26 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
-.header{
+
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 25vh;
   width: 100%;
 }
-.header img{
-  width: 180px;
+
+.header img {
+  width: 270px;
   padding-left: 6%;
   padding-top: 2.5%;
 }
-.header p{
+
+.header p {
   width: 50%;
   padding-left: 6%;
   padding-bottom: 1%;
@@ -24,7 +28,8 @@
   margin: 0;
   font-size: 12px;
 }
-.section1{
+
+.section1 {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -32,112 +37,176 @@
   background: rgba(3, 18, 39, 0.911);
   height: 25vh;
 }
-.section2{
+
+.section2 {
   display: flex;
   flex: 1;
   background: #5b7188;
   color: #5b7188;
   height: 25vh;
 }
-.section3{
+
+.section3 {
   display: flex;
   flex: 1.5;
   background: rgb(22, 182, 102);
-  color:  rgb(22, 182, 102);
+  color: rgb(22, 182, 102);
   height: 25vh;
 }
-.mid-body-container{
+
+.mid-body-container {
   width: 90%;
   text-align: left;
   margin: auto;
-  margin-top: 40px; 
+  margin-top: 50px; 
 }
-.mid-body-container h1{
+
+.mid-body-container h1 {
   color: rgba(3, 18, 39, 0.911);
   display: inline-block;
 }
-.mid-body-container h1::after{
+
+.mid-body-container h1::after {
   content: '';
   display: block;
   height: 3px;
   background: rgb(22, 182, 102);
   width: 75%;
 }
-.mid-body-content{
+
+.mid-body-content {
   margin-top: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 180px;
   row-gap: 30px;
 }
-.content-desc{
+
+.content-desc {
   color: grey;
   font-size: 15px;
+  width: 50%;
 }
-.mid-body-content p{
+
+.content-4 p {
+  display: inline;
+  
+}
+.content-4 input{
+  width: 30%;
+}
+.content-2 input, .content-1 input,.content-4 input{
+  border: none;
+  border-bottom: 2px solid rgb(22, 182, 102);
+  width: 60%;
+  outline: none;
+}
+.content-2 input{
+  padding-left: 100px;
+}
+.content-4 input{
+  border: none;
+  border-bottom: 2px solid rgb(22, 182, 102);
+  width: 42%;
+  padding-left: 100px;
+  outline: none;
+}
+.content-2 input:focus{
+  border-bottom: 2px solid rgba(3, 18, 39, 0.911);
+  transition: 0.5s;
+}
+.mid-body-content p {
   font-weight: 700;
   color: rgba(3, 18, 39, 0.911);
   margin-bottom: 9px;
 }
-.content-p{
+
+.content-p {
   display: inline-block;
+
 }
-.form-header{
+
+.form-header {
   display: flex;
   width: 100%;
   margin-top: 15px;
   height: 8vh;
 }
-.form-header-1{
+
+.form-header-1 {
   display: flex;
   align-items: center;
   flex: 35;
   background: rgba(3, 18, 39, 0.911);
   color: rgb(22, 182, 102);
 }
-.form-header-1 h3{
+
+.form-header-1 h3 {
   margin-left: 6%;
   font-weight: 500;
 }
-.form-header-2{
+
+.form-header-2 {
   flex: 1;
   background: #5b7188;
   color: #5b7188;
 }
-.form-header-3{
+
+.form-header-3 {
   flex: 1.5;
   background: rgb(22, 182, 102);
-  color:  rgb(22, 182, 102);
+  color: rgb(22, 182, 102);
 }
-.mid-body-content-2 form{
+
+.mid-body-content-2 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 180px;
   row-gap: 30px;
 }
-.mid-body-content-2 p{
+
+.mid-body-content-2 p {
   color: rgba(3, 18, 39, 0.911);
   font-weight: 700;
 }
-.incident-type{
+
+.incident-type {
   color: rgba(3, 18, 39, 0.911);
   font-size: 15px;
   width: 67%;
-  display: block;
 }
-.mid-body-content-2 input{
+.incident-type-1{
+  display: block;
+  margin-bottom: 5px;
+}
+.incident-type label{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+}
+.mid-body-content-2 input[type="text"] {
   width: 70%;
   border: none;
   border-bottom: 2px solid rgb(22, 182, 102);
   color: rgba(3, 18, 39, 0.911);
   font-weight: 500;
 }
-.mid-body-content-2 input:focus{
+
+.mid-body-content-2 input[type="text"]:focus {
   outline: none;
   border-bottom: 2px solid rgba(3, 18, 39, 0.911);
   transition: 0.5s;
 }
-form textarea{
+
+.mid-body-content-2 input[type="date"]{
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: rgba(3, 18, 39, 0.911);
+  font-weight: 500;
+}
+
+form textarea {
   margin-top: 8px;
   resize: none;
   outline: none;
@@ -145,16 +214,20 @@ form textarea{
   font-weight: 500;
   overflow: auto;
   text-indent: 5px;
+  width: 70%;
 }
-form textarea:focus{
+
+form textarea:focus {
   border: 2px solid rgba(3, 18, 39, 0.911);
   transition: 0.5s;
 }
-.submission{
+
+.submission {
   margin-bottom: 25px;
   margin-top: 25px;
 }
-.submission button{
+
+.submission button {
   padding: 12px 30px;
   font-size: 15px;
   background: rgb(22, 182, 102);
@@ -164,16 +237,19 @@ form textarea:focus{
   font-weight: 500;
   cursor: pointer;
 }
-.submission button:hover{
+
+.submission button:hover {
   background: rgba(3, 18, 39, 0.911);
   border: 2px solid rgb(22, 182, 102);
   color: rgb(22, 182, 102);
   transition: 0.5s;
 }
-.selector{
+
+.selector {
   width: 100%;
 }
-#selectField{
+
+#selectField {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -187,15 +263,18 @@ form textarea:focus{
   border-radius: 6px;
   border: 2px solid rgb(22, 182, 102);
 }
-#selectField:hover{
+
+#selectField:hover {
   border: 2px solid rgba(3, 18, 39, 0.911);
   transition: 0.25s;
 }
-#selectField i{
+
+#selectField i {
   width: 12px;
   transition: transform 0.5s;
 }
-#list{
+
+#list {
   width: 70%;
   cursor: pointer;
   background-color: rgb(22, 182, 102);
@@ -208,46 +287,73 @@ form textarea:focus{
   padding: 10px;
   list-style: none;
 }
-.options:hover{
+
+.options:hover {
   background: rgba(255, 255, 255, 0.7);
 }
-.hide{
+
+.hide {
   display: none;
 }
-.rotate{
+
+.rotate {
   transform: rotate(180deg);
 }
-@media(max-width: 800px){
-  .mid-body-content{
+
+@media (max-width: 800px) {
+  .mid-body-content {
     display: flex;
     flex-direction: column;
   }
-  .header img{
+
+  .header img {
     width: 250px;
     padding-top: 4%;
   }
-  .mid-body-content-2 form{
+
+  .mid-body-content-2 form {
     display: flex;
     flex-direction: column;
   }
-  form textarea{
+
+  form textarea {
     width: 90%;
   }
-  #selectField{
+
+  #selectField {
     width: 90%;
   }
-  #list{
+
+  #list {
     width: 90%;
   }
-  .options{
+
+  .options {
     width: 100%;
   }
+  .mid-body-content-2 input[type="date"]{
+    width: 90%;
+  }
+  .mid-body-content-2 input[type="text"]{
+    width: 90%;
+  }
+  .content-2 input{
+    width: 75%;
+  }
+  .content-1 input{
+    width: 73%;
+  }
+  .content-4 input{
+    width: 48%;
+  }
 }
-@media(min-width: 1450px){
-  .header img{
+
+@media (min-width: 1450px) {
+  .header img {
     width: 250px;
   }
-  .header p{
+
+  .header p {
     font-size: 20px;
   }
 }
