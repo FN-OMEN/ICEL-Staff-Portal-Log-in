@@ -85,9 +85,12 @@
 .content-desc {
   color: grey;
   font-size: 15px;
-  width: 50%;
+  width: 70%;
+  text-align: left;
 }
-
+.content-3{
+  width: 74%;
+}
 .content-4 p {
   display: inline;
   
