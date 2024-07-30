@@ -35,7 +35,7 @@
       </div>
       <div class="content-2">
         <p class="content-p">Date :</p>
-        <input type="text" maxlength="1">
+        <input type="date">
       </div>
       <div class="content-3">
         <p>Dear Sir/Madam.</p>
@@ -63,8 +63,11 @@
       <form>
         <div class="form-content-1">
           <p>Incident Type</p>
-          <input type="text">
-          <span class="incident-type">Accident, Near Miss, Unsafe Act, Unsafe Condition, Positive behaviour</span>
+          <label><input type="checkbox" name="incident-type" value="Accident"> Accident</label><br>
+          <label><input type="checkbox" name="incident-type" value="Near Miss"> Near Miss</label><br>
+          <label><input type="checkbox" name="incident-type" value="Unsafe Act"> Unsafe Act</label><br>
+          <label><input type="checkbox" name="incident-type" value="Unsafe Condition"> Unsafe Condition</label><br>
+          <label><input type="checkbox" name="incident-type" value="Positive behaviour"> Positive Behaviour</label>
         </div>
         <div class="form-content-2">
           <p>Location</p>
@@ -76,15 +79,15 @@
         </div>
         <div class="form-content-4">
           <p>Immediate Corrective/Reinforcement Action</p>
-          <textarea rows="4"  cols="40"></textarea>
+          <textarea rows="4" cols="40"></textarea>
         </div>
         <div class="form-content-5">
           <p>Date Observed</p>
-          <input type="text">
+          <input type="date">
         </div>
         <div class="form-content-6">
           <p>Date Reported</p>
-          <input type="text">
+          <input type="date">
         </div>
         <div class="form-content-7">
           <p>Observed by</p>
