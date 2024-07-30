@@ -43,7 +43,7 @@ body {
 }
 .icon{
   height: 100%;
-  padding-top: 3%;
+  padding-top: 4%;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -130,5 +130,10 @@ input[type="text"], input[type="date"] {
   margin: auto;
 }
 @media(min-width: 1450px){
-
+  .navbar{
+    height: 7.5vh;
+  }
+  .icon{
+    padding-top: 2.5%;
+  }
 }
