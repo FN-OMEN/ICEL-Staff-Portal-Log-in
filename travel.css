@@ -31,6 +31,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 2% 0 2% 2%;
+  height: 100%;
 }
 .navbar-holder img {
   height: 70px;
@@ -38,8 +39,15 @@ body {
 .navbar-holder a {
   color: black;
   padding: 2.35%;
+
 }
-.navbar a:hover {
+.icon{
+  height: 100%;
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.icon:hover {
   background-color: #ddd;
   color: black;
 }
@@ -123,7 +131,5 @@ input[type="text"], input[type="date"] {
   margin: auto;
 }
 @media(min-width: 1450px){
-  .container {
-    top: 27px;
-  }
+
 }
