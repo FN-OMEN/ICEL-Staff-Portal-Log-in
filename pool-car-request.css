@@ -9,15 +9,31 @@ body{
   text-align: center;
   margin: auto;
   margin-top: 3%;
-  width: 40%;
+  width: 70%;
 }
 .form-content-header{
   background: rgba(3, 18, 39, 0.911);
   color: white;
 }
-.form-content-header p{
-  margin-bottom: 0;
+.form-content-header p, h1{
+  margin: 0;
 }
 .form-content-body{
   background: antiquewhite;
+  padding: 25px;
+}
+.form-content-body-1{
+  display: grid;
+  grid-template-columns: 25% 55%;
+  width: 70%;
+  justify-content: center;
+  text-align: left;
+  margin: auto;
+  gap: 50px;
+}
+.form-content-body-1 input{
+  outline: none;
+}
+.lines{
+  display: inline;
 }
