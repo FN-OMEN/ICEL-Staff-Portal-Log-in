@@ -48,14 +48,13 @@ body {
   font-size: 35px;
 }
 .container {
-  width: 400px;
+  width: 30%;
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-top-right-radius: 15px;
-  margin-top: 97px;
-  position: fixed;
-  top: 20px;
+  position: absolute;
+  top: 120px;
   left: -505px;
   transition: left 2s;
   height: calc(100vh - 97px); /* Adjust height to fit the screen */
@@ -128,5 +127,11 @@ input[type="text"], input[type="date"] {
   .navbar{
     height: 11.3vh;
   }
-
+}
+@media(max-width: 500px){
+  .container{
+    width: 75%;
+    left: 0;
+    right: 0;
+  }
 }
