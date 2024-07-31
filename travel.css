@@ -55,8 +55,8 @@ body {
   border-top-right-radius: 15px;
   position: absolute;
   top: 125px;
-  left: -450px;
-  transition: left 2s;
+  left: -800px;
+  transition: left 2.5s;
   height: calc(100vh - 97px); /* Adjust height to fit the screen */
   overflow: auto; /* Enable vertical scrolling */
   z-index: 0;

@@ -4,7 +4,7 @@ function showForm() {
 }
 
 function hideForm() {
-  document.getElementById('travelFormContainer').style.left = '-450px';
+  document.getElementById('travelFormContainer').style.left = '-800px';
   document.querySelector('.travelForm').style.display = 'block';
 }
 
