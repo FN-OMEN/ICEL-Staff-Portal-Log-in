@@ -136,4 +136,8 @@ input[type="text"], input[type="date"] {
     right: 0;
     border-top-right-radius: 0px;
   }
+  .travelForm-btn{
+    font-size: 13.4px;
+    padding: 10px;
+  }
 }
