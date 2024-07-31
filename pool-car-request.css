@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: rgb(22, 182, 102);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.form-content-carrier{
+  text-align: center;
+  margin: auto;
+  margin-top: 3%;
+  width: 40%;
+}
+.form-content-header{
+  background: rgba(3, 18, 39, 0.911);
+  color: white;
+}
+.form-content-header p{
+  margin-bottom: 0;
+}
+.form-content-body{
+  background: antiquewhite;
+}
