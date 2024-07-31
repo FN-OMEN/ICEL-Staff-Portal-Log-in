@@ -46,6 +46,7 @@ body {
 }
 .navbar i {
   font-size: 35px;
+  color: rgb(22, 182, 102);
 }
 .container {
   width: 450px;
