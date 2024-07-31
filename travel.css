@@ -132,9 +132,9 @@ input[type="text"], input[type="date"] {
 @media(max-width: 800px){
   .container{
     width: 100%;
-    left: 0;
     right: 0;
     border-top-right-radius: 0px;
+    transition: 2s
   }
   .travelForm-btn{
     font-size: 13.4px;
