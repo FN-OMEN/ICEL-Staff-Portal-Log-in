@@ -129,7 +129,7 @@ input[type="text"], input[type="date"] {
     height: 11.3vh;
   }
 }
-@media(max-width: 500px){
+@media(max-width: 800px){
   .container{
     width: 100%;
     left: 0;
