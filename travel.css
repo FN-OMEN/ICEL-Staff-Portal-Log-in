@@ -48,18 +48,19 @@ body {
   font-size: 35px;
 }
 .container {
-  width: 30%;
+  width: 450px;
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-top-right-radius: 15px;
   position: absolute;
-  top: 120px;
-  left: -505px;
+  top: 125px;
+  left: -450px;
   transition: left 2s;
   height: calc(100vh - 97px); /* Adjust height to fit the screen */
   overflow: auto; /* Enable vertical scrolling */
   z-index: 0;
+  box-sizing: border-box;
 }
 header {
   font-size: 24px;
