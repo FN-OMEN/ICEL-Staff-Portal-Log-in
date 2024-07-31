@@ -22,17 +22,47 @@ body{
   background: white;
   padding: 25px;
 }
-.form-content-body-1{
+.form-content-body-1, .form-content-body-3{
   display: grid;
-  grid-template-columns: 25% 55%;
+  grid-template-columns: 35% 55%;
   width: 70%;
   justify-content: center;
   text-align: left;
   margin: auto;
   gap: 50px;
 }
-.form-content-body-1 input{
+.form-content-body-4{
+  display: grid;
+  width: 68.8%;
+  grid-template-rows: 30% 15% 20% 20%;
+  grid-template-columns: 100%;
+  justify-content: center;
+  text-align: left;
+  margin: auto;
+  box-sizing: border-box;
+}
+.form-content-body-4 p{
+  margin: 0;
+  width: 100%;
+}
+.form-content-body-4 input{
+  width: 100%;
   outline: none;
+  border: none;
+  border-bottom: 2px dotted rgba(3, 18, 39, 0.911);
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+.form-content-body-1 input, .form-content-body-3 input, select{
+  outline: none;
+  border: none;
+  border-bottom: 2px dotted rgba(3, 18, 39, 0.911);
+}
+select{
+  padding-left: 1%;
+}
+.form-content-body-3 input{
+  padding-left: 40%;
 }
 .lines{
   display: inline;
