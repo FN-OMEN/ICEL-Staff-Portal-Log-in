@@ -25,7 +25,7 @@
         <form id="travelForm">
           <div class="passenger-name">
             <label>Name of Passenger(s)</label>
-            <input type="text">
+            <input type="text" required>
             <input type="text">
             <input type="text">
           </div>
@@ -34,21 +34,21 @@
               <label>Trip type</label>
             </div>
             <div class="trip-1">
-              <input type="radio" name="trip-type"><span>Local</span>
+              <input type="radio" name="trip-type" required><span>Local</span>
             </div>
             <div class="trip-1">
-              <input type="radio" name="trip-type"><span>International</span>
+              <input type="radio" name="trip-type" required><span>International</span>
             </div>
           </div>
           <div class="airline">
             <label>Preferred Airline</label>
             <span>(Subject to seat availability and other trip factors)</span>
-            <input type="text">
+            <input type="text" required>
           </div>
           <div class="airline">
             <label>Preferred Flight Class</label>
             <span>(Subject to seat availability and other trip factors)</span>
-            <input type="text">
+            <input type="text" required>
           </div>
           <div class="ticket-type">
             <label>Ticket Type</label>
@@ -66,15 +66,15 @@
           <div class="flight-type">
             <label>Flight type</label>
             <div class="flight-1">
-              <input type="radio" name="flight-type">
+              <input type="radio" name="flight-type" required>
               <span>One way Departure</span>
             </div>
             <div class="flight-1">
-              <input type="radio" name="flight-type">
+              <input type="radio" name="flight-type" required>
               <span>One way Arrival</span>
             </div>
             <div class="flight-1">
-              <input type="radio" name="flight-type">
+              <input type="radio" name="flight-type" required>
               <span>Round trip: Departure and Arrival</span>
             </div>
           </div>
@@ -83,7 +83,7 @@
             <p>One way: Origin-Destination</p>
             <p>Return-trip: Origin-Destination-Origin</p>
             <p>(For international trip, specify destination's exact city)</p>
-            <input type="text">
+            <input type="text" required>
           </div>
           <div class="dep-date">
             <label for="checkin">Departure Date</label>
@@ -93,31 +93,31 @@
             <label for="departure-time">Preferred Departure Time(Origin-Destination)</label>
             <span>(Subject to seat availability and other trip factors)</span>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Very early morning</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Mid-morning</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Just before noon</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Just after noon</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Mid afternoon</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Evening</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Night</span>
             </div>
           </div>
@@ -129,31 +129,31 @@
             <label for="departure-time">Preferred Arrival Time(Destination-Origin)</label>
             <span>(Subject to seat availability and other trip factors)</span>
             <div>
-              <input type="radio" name="arrival-time">
+              <input type="radio" name="arrival-time" required>
               <span>Very early morning</span>
             </div>
             <div>
-              <input type="radio" name="arrival-time">
+              <input type="radio" name="arrival-time" required>
               <span>Mid-morning</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Just before noon</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Just after noon</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Mid afternoon</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Evening</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>Night</span>
             </div>
           </div>
@@ -161,23 +161,23 @@
             <label for="departure-time">Preferred Luggage Weight</label>
             <span>(Subject to the chosen Airline and extra charges may be applicable)</span>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>1 Cabin baggage of about 7kg or less</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>1 Cabin baggage and not more than 15kg check-in baggage</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>1 Cabin baggage and not more than 23kg check-in baggage</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>1 Piece of 23kg check-in baggage</span>
             </div>
             <div>
-              <input type="radio" name="departure-time">
+              <input type="radio" name="departure-time" required>
               <span>2 Pieces of 46kg check-in baggage</span>
             </div>
           </div>
