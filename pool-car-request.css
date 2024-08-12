@@ -31,6 +31,15 @@ body{
   margin: auto;
   gap: 50px;
 }
+.form-content-body-2{
+  display: grid;
+  grid-template-columns: 10fr 10fr;
+  width: 68.5%;
+  justify-content: center;
+  text-align: left;
+  margin: auto;
+  box-sizing: border-box;
+}
 .form-content-body-4{
   display: grid;
   width: 68.8%;
@@ -57,6 +66,7 @@ body{
   outline: none;
   border: none;
   border-bottom: 2px dotted rgba(3, 18, 39, 0.911);
+  
 }
 select{
   padding-left: 1%;

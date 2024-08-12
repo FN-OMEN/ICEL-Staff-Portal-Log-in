@@ -49,13 +49,14 @@ body {
   color: rgb(22, 182, 102);
 }
 .container {
-  width: 450px;
+  width: 550px;
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-top-right-radius: 15px;
   position: absolute;
   top: 125px;
+  bottom: 0;
   left: -800px;
   transition: left 2.5s;
   height: calc(100vh - 97px); /* Adjust height to fit the screen */
@@ -63,21 +64,14 @@ body {
   z-index: 0;
   box-sizing: border-box;
 }
+.container-content{
+  text-align: left;
+  margin: auto;
+}
 header {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-}
-label {
-  display: block;
-  margin: 10px 0 5px;
-}
-input[type="text"], input[type="date"] {
-  width: calc(100% - 10px);
-  padding: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 .submit-btn {
   width: 50%;
@@ -124,6 +118,58 @@ input[type="text"], input[type="date"] {
   width: 100%;
   text-align: center;
   margin: auto;
+  margin-top: 20px;
+}
+.trip{
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+.airline p{
+  margin: 8px 0;
+}
+.trip-1{
+  margin-bottom: 8px;
+}
+.passenger-name, .airline, .ticket-type, .flight-type, .dep-date, .departure-time{
+  margin: 15px 0;
+}
+.passenger-name input, .airline input{
+  background: transparent;
+  width: 80%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  padding-top: 5px;
+}
+.passenger-name input:focus, .airline input:focus{
+  border-bottom: 2px solid #0056b3;
+  transition: 0.5s;
+}
+.ticket-type p{
+  margin: 5px 0;
+}
+.type-1{
+  margin-bottom: 8px;
+}
+.flight-type .flight-1{
+  margin-bottom: 8px;
+}
+.dep-date input{
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 80%;
+  outline: none;
+}
+.departure-time div{
+  margin: 8px 0;
+}
+.container-content label{
+  font-weight: 600;
+  font-size: 17px;
+  display: block;
+  margin: 7px 0;
 }
 @media(min-width: 1450px){
   .navbar{
