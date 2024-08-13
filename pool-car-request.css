@@ -21,6 +21,7 @@ body{
 .form-content-body{
   background: white;
   padding: 25px;
+  line-height: 30px;
 }
 .form-content-body-1, .form-content-body-3{
   display: grid;
@@ -33,12 +34,30 @@ body{
 }
 .form-content-body-2{
   display: grid;
-  grid-template-columns: 10fr 10fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 5px;
   width: 68.5%;
   justify-content: center;
   text-align: left;
   margin: auto;
+  margin-top: 10px;
   box-sizing: border-box;
+}
+.form-content-body-2 .departure-date input{
+  border: none;
+  border-bottom: 2px dotted rgba(3, 18, 39, 0.911);
+  width: 35%;
+}
+.form-content-body-2 [type="time"]{
+  border: none;
+  border-bottom: 2px dotted rgba(3, 18, 39, 0.911);
+  width: 35%;
+}
+.form-content-body-2 .return-date input{
+  border: none;
+  border-bottom: 2px dotted rgba(3, 18, 39, 0.911);
+  width: 65%;
 }
 .form-content-body-4{
   display: grid;
@@ -69,7 +88,7 @@ body{
   
 }
 select{
-  padding-left: 1%;
+  padding-left: 0%;
 }
 .form-content-body-3 input{
   padding-left: 40%;
