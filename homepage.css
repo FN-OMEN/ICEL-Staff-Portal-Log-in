@@ -127,6 +127,31 @@ nav .fa-solid{
   transition: 0.5s ease;
   padding-left: 10px;
 }
+.About{
+  width: 80%;
+  text-align: left;
+  margin: auto;
+}
+.About h2{
+  font-size: 60px;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+.about-section {
+   background-image: none;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+  }
+  
+  .about-section .About h2 {
+    color: black;
+  }
+  
+  .about-section .About p {
+    color: 0;
+  }
 @media(max-width: 800px){
   .header{
     height: 100%;
@@ -199,6 +224,9 @@ nav .fa-solid{
     grid-template-columns: 1fr 1fr;
     width: 80%;
     gap: 25px;
+  }
+  .About h2{
+    font-size: 40px;
   }
 }
 @media(min-width: 1450px){

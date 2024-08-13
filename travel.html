@@ -13,9 +13,6 @@
     <div class="navbar">
       <div class="navbar-holder">
         <img src="images/imperial-crest-logo.png" alt="Logo">
-        <div class="icon">
-          <a href="homepage.html"><i class="fas fa-home"></i></a>
-        </div>
       </div>
     </div>
     <div id="travelFormContainer" class="container">
@@ -24,14 +21,14 @@
         <header>Travel</header>
         <form id="travelForm">
           <div class="passenger-name">
-            <label>Name of Passenger(s)</label>
+            <label>Name of Passenger(s) *</label>
             <input type="text" required>
             <input type="text">
             <input type="text">
           </div>
           <div class="trip">
             <div>
-              <label>Trip type</label>
+              <label>Trip type *</label>
             </div>
             <div class="trip-1">
               <input type="radio" name="trip-type" required><span>Local</span>
@@ -41,17 +38,17 @@
             </div>
           </div>
           <div class="airline">
-            <label>Preferred Airline</label>
+            <label>Preferred Airline *</label>
             <span>(Subject to seat availability and other trip factors)</span>
             <input type="text" required>
           </div>
           <div class="airline">
-            <label>Preferred Flight Class</label>
+            <label>Preferred Flight Class *</label>
             <span>(Subject to seat availability and other trip factors)</span>
             <input type="text" required>
           </div>
           <div class="ticket-type">
-            <label>Ticket Type</label>
+            <label>Ticket Type *</label>
             <p>One way (If return date and time is not certain)</p>
             <p>Round Trip (If return date and time is certain)</p>
             <div class="type-1">
@@ -64,7 +61,7 @@
             </div>
           </div>
           <div class="flight-type">
-            <label>Flight type</label>
+            <label>Flight type *</label>
             <div class="flight-1">
               <input type="radio" name="flight-type" required>
               <span>One way Departure</span>
@@ -79,18 +76,18 @@
             </div>
           </div>
           <div class="airline">
-            <label>Routes (Locations)</label>
+            <label>Routes (Locations) *</label>
             <p>One way: Origin-Destination</p>
             <p>Return-trip: Origin-Destination-Origin</p>
             <p>(For international trip, specify destination's exact city)</p>
             <input type="text" required>
           </div>
           <div class="dep-date">
-            <label for="checkin">Departure Date</label>
+            <label for="checkin">Departure Date *</label>
             <input type="date" id="checkin" name="checkin" required>
           </div>
           <div class="departure-time">
-            <label for="departure-time">Preferred Departure Time(Origin-Destination)</label>
+            <label for="departure-time">Preferred Departure Time(Origin-Destination) *</label>
             <span>(Subject to seat availability and other trip factors)</span>
             <div>
               <input type="radio" name="departure-time" required>
@@ -122,11 +119,11 @@
             </div>
           </div>
           <div class="dep-date">
-            <label for="checkin">Arrival Date</label>
+            <label for="checkin">Arrival Date *</label>
             <input type="date" id="checkin" name="checkin" required>
           </div>
           <div class="departure-time">
-            <label for="departure-time">Preferred Arrival Time(Destination-Origin)</label>
+            <label for="departure-time">Preferred Arrival Time(Destination-Origin) *</label>
             <span>(Subject to seat availability and other trip factors)</span>
             <div>
               <input type="radio" name="arrival-time" required>
