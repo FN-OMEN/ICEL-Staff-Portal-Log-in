@@ -58,7 +58,6 @@ body {
   bottom: 0;
   left: -800px;
   transition: left 2.5s;
-  height: calc(100vh - 97px); 
   overflow: auto;
   z-index: 0;
   box-sizing: border-box;

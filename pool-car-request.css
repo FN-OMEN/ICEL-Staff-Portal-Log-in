@@ -37,7 +37,7 @@ body{
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   row-gap: 5px;
-  width: 68.5%;
+  width: 66%;
   justify-content: center;
   margin: auto;
   margin-top: 10px;
@@ -60,10 +60,10 @@ body{
 }
 .form-content-body-4{
   display: grid;
-  width: 68.8%;
+  width: 67.5%;
   grid-template-rows: 30% 15% 20% 20%;
   grid-template-columns: 100%;
-  justify-content: center;
+  text-align: left;
   margin: auto;
   box-sizing: border-box;
 }
