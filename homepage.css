@@ -164,6 +164,7 @@ nav .fa-solid{
 .about-section {
 width: 100%; 
 padding: 50px 0;
+font-family: 'Proxima Nova Condensed', sans-serif;
 }
 .about-section .About h2 {
   color: black;
