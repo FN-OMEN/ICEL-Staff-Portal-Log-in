@@ -161,6 +161,9 @@ nav .fa-solid{
   margin-top: 0;
   text-align: center;
 }
+.About p{
+  font-size: 20px;
+}
 .about-section {
 width: 100%; 
 padding: 50px 0;
