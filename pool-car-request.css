@@ -22,13 +22,13 @@ body{
   background: white;
   padding: 25px;
   line-height: 30px;
+  text-align: left;
 }
 .form-content-body-1, .form-content-body-3{
   display: grid;
   grid-template-columns: 35% 55%;
   width: 70%;
   justify-content: center;
-  text-align: left;
   margin: auto;
   gap: 50px;
 }
@@ -39,7 +39,6 @@ body{
   row-gap: 5px;
   width: 68.5%;
   justify-content: center;
-  text-align: left;
   margin: auto;
   margin-top: 10px;
   box-sizing: border-box;
@@ -65,7 +64,6 @@ body{
   grid-template-rows: 30% 15% 20% 20%;
   grid-template-columns: 100%;
   justify-content: center;
-  text-align: left;
   margin: auto;
   box-sizing: border-box;
 }
@@ -95,4 +93,11 @@ select{
 }
 .lines{
   display: inline;
+}
+@media(min-width: 1450px){
+  .form-content-body-2 .return-date input{
+    border: none;
+    border-bottom: 2px dotted rgba(3, 18, 39, 0.911);
+    width: 65%;
+  }
 }
