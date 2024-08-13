@@ -230,6 +230,9 @@ nav .fa-solid{
   }
 }
 @media(min-width: 1450px){
+  .header{
+    height: 110vh;
+  }
   .content{
     margin-top: 80px;
   }
@@ -249,7 +252,7 @@ nav .fa-solid{
   }
   .footer{
     margin-bottom: 0;
-    margin-top: 220px;
+    margin-top: 70px;
   }
   .footer i{
     font-size: 25px;
