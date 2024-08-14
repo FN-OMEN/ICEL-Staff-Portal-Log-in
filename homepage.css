@@ -396,4 +396,8 @@ nav .fa-solid{
     transition: 0.5s;
     padding-left: 10px;
   }
+  #myBtn{
+    font-size: 35px;
+    padding: 24px 30px;
+  }
 }
