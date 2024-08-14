@@ -174,6 +174,7 @@ nav .fa-solid{
 }
 .services{
   width: 80%;
+  height: 100%;
   text-align: center;
   margin: auto;
   padding: 50px 0;
@@ -191,6 +192,7 @@ nav .fa-solid{
 .services-column{
   display: flex;
   flex-direction: row;
+  height: 100%;
   gap: 30px;
 }
 .column-1{
