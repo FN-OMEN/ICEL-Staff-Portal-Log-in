@@ -167,10 +167,50 @@ nav .fa-solid{
 .About p{
   font-size: 20px;
 }
-.about-section {
-width: 100%; 
-padding: 50px 0;
-font-family: 'Proxima Nova Condensed', sans-serif;
+.about-section{
+  width: 100%; 
+  padding: 50px 0;
+  font-family: 'Proxima Nova Condensed', sans-serif;
+}
+.services{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding: 50px 0;
+}
+.services h1{
+  margin: 0;
+}
+.services-desc{
+  margin-bottom: 30px;
+  margin-top: 10px;
+  color: #777;
+  font-size: 18px;
+  font-weight: 300;
+}
+.services-column{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.column-1{
+  flex-basis: 35%;
+}
+.column-1 img{
+  width: 100%;
+  height: 60%;
+  border-radius: 10px;
+}
+.column-1 h3{
+  text-align: left;
+  font-weight: 700;
+  font-size: 22px;
+}
+.column-1 p{
+  text-align: left;
+  color: #777;
+  font-size: 18px;
+  font-weight: 300;
 }
 .about-section .About h2 {
   color: black;
@@ -293,6 +333,9 @@ font-family: 'Proxima Nova Condensed', sans-serif;
 .position{
   font-size: 11px;
   font-weight: 300;
+}
+.services-column{
+  flex-direction: column;
 }
 }
 
