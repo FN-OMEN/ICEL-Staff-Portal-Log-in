@@ -47,6 +47,10 @@ table input{
   width: 38%;
   box-sizing: border-box;
 }
+.service-po{
+  width: 77%;
+  box-sizing: border-box;
+}
 .content-1{
   display: grid;
   grid-template-columns: 1fr 1fr;
