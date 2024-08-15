@@ -1,16 +1,68 @@
 body{
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  padding: 0;
+  margin: 0;
 }
+.navigation-links-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2% 0;
+}
+.navigation-links-left img{
+  width: 300px;
+}
+.content{
+  width: 100%;
+}
+.content-body{
+  width: 95%;
+  text-align: center;
+  margin: auto;
+}
+.content-body input{
+  font-size: 17px;
+  outline: none;
+  border: none;
+  background: none;
+}
+table input{
+  border-bottom: none;
+  width: 100%;
+}
+.content-1 input, .recommend input, .request input{
+  border-bottom: 2px solid black;
+}
+.content-1 [type = "text"], .content-1 [type = "date"], .recommend [type = "text"]{
+  width: 35%;
+  box-sizing: border-box;
+}
+.recommend [type = "text"]{
+  width: 50%;
+  box-sizing: border-box;
+}
+.content-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 2%;
+  gap: 15px;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
+  margin: 2% 0;
 }
 
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  outline: none;
 }
 
 tr:nth-child(even) {
@@ -30,4 +82,53 @@ th {
   width: 100%;
   box-sizing: content-box;
   text-align: right;
+}
+.row-btn{
+  width: 100%;
+  text-align: left;
+  padding-bottom: 3%;
+}
+.row-btn button{
+  color: white;
+  background: black;
+  border: 2px solid black;
+  font-size: 17px;
+  padding: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.row-btn button:hover{
+  background: white;
+  color: black;
+  border: 2px solid black;
+  transition: 0.5s;
+
+}
+.content-2{
+  width: 100%;
+  text-align: left;
+}
+.option-1 p{
+  margin: 0;
+}
+.recommend{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  padding: 2% 0;
+}
+.footer{
+  padding-bottom: 5%;
+}
+.request{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+  text-align: left;
+  line-height: 50px;
+  padding: 30px 0;
+}
+.request input{
+  width: 55%;
 }

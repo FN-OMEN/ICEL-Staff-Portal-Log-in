@@ -8,16 +8,45 @@
   <link rel="stylesheet" href="requisition.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <title>Staff Portal Page</title>
+  <title>Purchasing Requisition</title>
 </head>
 <body>
-  <script src="requisition.js"></script>
-  <div class="header">
-    <nav>
-      <div class="navigation-links">
-        <div class="navigation-links-left">
-          <img src="images/imperial-crest-logo.png">
-          <h1>PURCHASING REQUISITION</h1>
+<script src="requisition.js"></script>
+  <div class="navigation-links-left">
+    <img src="images/imperial-crest-logo.png">
+    <h1>PURCHASING REQUISITION</h1>
+  </div>
+  <div class="content">
+    <div class="content-body">
+      <form>
+        <div class="content-1">
+
+          <div class="">
+            <p>Department: Admin</p>
+          </div>
+          <div class="date">
+            <span>Delivery-Date *:</span>
+            <input type="date" required>
+          </div>
+          <div class="">
+            <label>Payment method *:</label>
+            <div class="">
+              <input type="radio" name="payment-method" required>
+              <label>Cash</label>
+            </div>
+            <div class="">
+              <input type="radio" name="payment-method">
+              <label>Transfer</label>
+            </div>
+            <div class="">
+              <input type="radio" name="payment-method">
+              <label>Cheque</label>
+            </div>
+          </div>
+          <div class="">
+            <span>Account paid to *:</span>
+            <input type="text" required>
+          </div>
         </div>
         <table id="table">
           <tr>
@@ -52,134 +81,165 @@
               <td colspan="4">Total</td>
               <td id="total">0</td>
           </tr>
-      </table>
-      
-      <br>
-      
-      <button onclick="addRow()">Add Row</button>
-      
-  
-        <div class="content-1">
-          <p>Purpose: For Office Use</p>
-          <form id="Requisiton-Form">
-            <div>
-              <label>Budget Expenditure *</label>
+        </table>
+        <div class="row-btn">
+          <button onclick="addRow()">Add Row</button>
+        </div>
+        <div class="content-2">
+          <h2>Purpose: For Office Use</h2>
+          <div class="content-1">
+            <div class="option-1">
+              <p>Budgeted Expenditure *:</p>
+              <input type="radio" name="budget" required><span>Yes</span>
+              <input type="radio" name="budget" required><span>No</span>
             </div>
             <div class="option-1">
-              <input type="radio" name="pass-no" required><span>Yes</span>
-            </div>
-            <div class="option-2">
-              <input type="radio" name="pass-no" required><span>No</span>
-            </div>
-            <div>
-              <label>Funds Available *</label>
+              <p>Funds Available *:</p>
+              <input type="radio" name="funds" required><span>Yes</span>
+              <input type="radio" name="funds" required><span>No</span>
             </div>
             <div class="option-1">
-              <input type="radio" name="pass-no" required><span>Yes</span>
-            </div>
-            <div class="option-2">
-              <input type="radio" name="pass-no" required><span>No</span>
-            </div>
-            <div>
-              <label>Acquired Expenditure *</label>
+              <p>Acquired at Store *:</p>
+              <input type="radio" name="store" required><span>Yes</span>
+              <input type="radio" name="store" required><span>No</span>
             </div>
             <div class="option-1">
-              <input type="radio" name="pass-no" required><span>Yes</span>
+              <label>Name of Store *:</label>
+              <input type="text">
             </div>
-            <div class="option-2">
-              <input type="radio" name="pass-no" required><span>No</span>
-            </div>
-            <label for="destination">Name of Store:</label>
+          </div>
+        </div>
+        <table>
+          <th colspan="8" style="text-align: center;">Quotations/Tenders Recieved</th>
+          <tr>
+            <th>S/N</th>
+            <th>Suppliers Name</th>
+            <th>Vendor on the Database?</th>
+            <th>Contact Name</th>
+            <th>Telephone</th>
+            <th>Email</th>
+            <th>Price offers</th>
+            <th>Special Conditions/Remarks</th>
+          </tr>
+          <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+          </tr>
+          <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+          </tr>
+        </table>
+        <div class="recommend">
+          <div class="recommend-1">
+            <label for="provider">Recommended Supplier:</label>
             <input type="text">
           </div>
-      </div>
-      <table>
-        <tr>
-          <th>S/N</th>
-          <th>Name</th>
-          <th>Vendor on the Database?</th>
-          <th>Name</th>
-          <th>Telephone</th>
-          <th>Email</th>
-          <th>Price offers</th>
-          <th>Special Conditions/Remarks</th>
-        </tr>
-        <tr>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-        </tr>
-        <tr>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-        </tr>
-      </table>
-      <label for="provider">Recommended Supplier.Service Provider</label>
-      <input type="text">
-      <Label>P.O</Label>
-    </nav>
-    <label for="no">NO</label>
-    <input type="text">
-  </div>
-  <label for="reason">Reason(S) if not the lowest offer</label>
-    <input type="text">
-    <h1>Requested By</h1>
-  <div class="footer">
-    <label>Name:</label>
-    <input type="text">
-    <label>Designation</label>
-    <input type="text">
-    <label for="date">Date</label>
-    <input type="date" name="footer" id="Date">
-  </div>
-  <h1>Authorized By</h1>
-  <div class="footer-2">
-    <label>Name:</label>
-    <input type="text">
-    <label>Designation</label>
-    <input type="text">
-    <label for="date">Date</label>
-    <input type="date" name="footer-2" id="Date">
-  </div>
-  <h1>Approved By</h1>
-  <div class="footer">
-    <label>Name:</label>
-    <input type="text">
-    <label>Designation</label>
-    <input type="text">
-    <label for="date">Date</label>
-    <input type="date" name="footer" id="Date">
+          <div class="recommend-1">
+            <label for="provider">Service Provider:</label>
+            <input type="text">
+          </div>
+          <div class="recommend-1">
+            <label>P.O. No:</label>
+            <input type="text">
+          </div>
+          <div class="recommend-1">
+            <label for="reason">Reason(S) if not the lowest offer:</label>
+            <input type="text">
+          </div>
+        </div>
+        <div class="request">
+          <div class="footer">
+            <h1>Requested By:</h1>
+            <div class="">
+              <label>Name* :</label>
+              <input type="text" required>
+            </div>
+            <div class="">
+              <label>Designation* :</label>
+              <input type="text" required>
+            </div>
+            <div class="">
+              <label for="date">Date* :</label>
+              <input type="date" name="footer" id="Date" required>
+            </div>
+          </div>
+          <div class="footer">
+            <h1>Authorization Info:</h1>
+            <div class="">
+              <label>Name* :</label>
+              <input type="text" required>
+            </div>
+            <div class="">
+              <label>Designation* : </label>
+              <input type="text" required>
+            </div>
+            <div class="">
+              <label for="date">Date* :</label>
+              <input type="date" name="footer" id="Date" required>
+            </div>
+            <div class="">
+              <label for="mail">Email* :</label>
+              <input type="mail" name="footer" id="Mail" required>
+            </div>
+          </div>
+          <div class="footer">
+            <h1>Approval Info:</h1>
+            <div class="">
+              <label>Name* :</label>
+              <input type="text" required>
+            </div>
+            <div class="">
+              <label>Designation* :</label>
+              <input type="text" required>
+            </div>
+            <div class="">
+              <label for="date">Date* :</label>
+              <input type="date" name="footer" id="Date" required>
+            </div>
+            <div class="">
+              <label for="mail">Email* :</label>
+              <input type="mail" name="footer" id="Mail" required>
+            </div>
+          </div>
+        </div>
+        <div class="row-btn">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
   </div>
 </body>
 </html>
