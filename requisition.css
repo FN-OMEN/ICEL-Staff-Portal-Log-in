@@ -35,12 +35,16 @@ table input{
 .content-1 input, .recommend input, .request input{
   border-bottom: 2px solid black;
 }
-.content-1 [type = "text"], .content-1 [type = "date"], .recommend [type = "text"]{
+.content-1 [type = "text"], .content-1 [type = "date"]{
   width: 35%;
   box-sizing: border-box;
 }
-.recommend [type = "text"]{
-  width: 50%;
+.po{
+  width: 60%;
+  box-sizing: border-box;
+}
+.service{
+  width: 38%;
   box-sizing: border-box;
 }
 .content-1{
