@@ -36,20 +36,37 @@ table input{
 .content-1 input, .recommend input, .request input{
   border-bottom: 2px solid black;
 }
-.content-1 [type = "text"], .content-1 [type = "date"]{
-  width: 35%;
+.content-1 [type = "text"]{
+  width: 30%;
+  box-sizing: border-box;
+}
+.content-1 [type = "date"]{
+  width: 33%;
+  padding-left: 8%;
   box-sizing: border-box;
 }
 .po{
-  width: 60%;
+  width: 73%;
   box-sizing: border-box;
 }
 .service{
-  width: 38%;
+  width: 50.5%;
   box-sizing: border-box;
 }
 .service-po{
-  width: 77%;
+  width: 50%;
+  box-sizing: border-box;
+}
+.req-name{
+  width: 64%;
+}
+.req-date{
+  width: 68%;
+  padding-left: 20%;
+  box-sizing: border-box;
+}
+.req-mail{
+  width: 67%;
   box-sizing: border-box;
 }
 .content-1{
@@ -139,6 +156,23 @@ th {
   line-height: 50px;
   padding: 30px 0;
 }
-.request input{
-  width: 55%;
+@media(min-width: 1450px){
+  .content-1 [type = "text"]{
+    width: 50%;
+  }
+  .content-1 [type = "date"]{
+    width: 51%;
+  }
+  .service{
+    width: 61.5%;
+  }
+  .service-po{
+    width: 94.5%;
+  }
+  .req-des{
+    width: 60%;
+  }
+  .req-name{
+    width: 66%;
+  }
 }

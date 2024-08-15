@@ -29,8 +29,7 @@ function togglePassword2() {
     showPassword.classList.add('fa-eye')
   }
 }
-  
-  function passwordValidation() {
+    function Validation() {
     let password = document.getElementById("password");
     let password2 = document.getElementById("password-2")
     let passwordValue = password.value

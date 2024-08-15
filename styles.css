@@ -172,7 +172,7 @@ form{
   left: 90%;
   transform: translateY(-5%)
 }
-.error-message{
+.error-message, .error-message-1, .error-message-2{
   color: red;
   font-size: 14px;
   font-weight: 500;
