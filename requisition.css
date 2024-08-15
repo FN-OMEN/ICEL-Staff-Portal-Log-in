@@ -161,7 +161,8 @@ th {
     width: 50%;
   }
   .content-1 [type = "date"]{
-    width: 51%;
+    width: 51.5%;
+    padding-left: 0;
   }
   .service{
     width: 57.5%;
