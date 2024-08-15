@@ -115,6 +115,7 @@ th {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
+  text-align: left;
   padding: 2% 0;
 }
 .footer{
