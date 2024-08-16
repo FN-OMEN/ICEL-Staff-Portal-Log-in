@@ -118,7 +118,15 @@ nav .fa-solid{
   text-align: center;
   margin: 0px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 8px;
+}
+.footer-info{
+  width: 100%;
+  text-align: center;
+  background: black;
+  padding: 10px 0;
+  color: white;
+  font-size: 15px;
 }
 .footer i{
   color: black;
@@ -324,7 +332,6 @@ nav .fa-solid{
     padding: 8px 12px;
   }
   .footer{
-    margin-bottom: 20px;
     margin-top: 30px;
   }
   .footer i:hover{
@@ -350,20 +357,20 @@ nav .fa-solid{
   text-align: center;
   margin: auto;
   box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
-}
-.name{
-  font-size: 20px;
-}
-.position{
-  font-size: 11px;
-  font-weight: 300;
-}
-.services-column{
-  flex-direction: column;
-}
-#myBtn{
-  right: 1%;
-}
+  }
+  .name{
+    font-size: 20px;
+  }
+  .position{
+    font-size: 11px;
+    font-weight: 300;
+  }
+  .services-column{
+    flex-direction: column;
+  }
+  #myBtn{
+    right: 1%;
+  }
 }
 
 @media(min-width: 1450px){
