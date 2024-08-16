@@ -80,7 +80,8 @@ body{
 }
 .username{
   padding: 10px 0 10px 35px;
-  width: 310px;
+  width: 100%;
+  box-sizing: border-box;
   border: none;
   border-bottom: 2px solid rgb(22, 182, 102);
   color:  rgb(158, 158, 167);
@@ -95,7 +96,8 @@ body{
 }
 .email{
   padding: 10px 0 10px 35px;
-  width: 88%;
+  width: 100%;
+  box-sizing: border-box;
   border: none;
   border-bottom: 2px solid rgb(22, 182, 102);
   color:  rgb(158, 158, 167);
@@ -103,11 +105,20 @@ body{
 }
 .password{
   padding: 10px 0 10px 35px;
-  width: 88%;
+  width: 100%;
+  box-sizing: border-box;
   border: none;
   border-bottom: 2px solid rgb(22, 182, 102);
   color:  rgb(158, 158, 167);
   font-size: 16px;
+}
+.password-info{
+  text-align: left;
+  margin: auto;
+  font-size: 11px;
+  margin: 5px 0;
+  font-weight: 500;
+  color: rgb(22, 182, 102);
 }
 .call-to-action{
   display: flex;

@@ -40,6 +40,8 @@ function passwordValidation() {
     errorMessage.textContent = "Password is less than 8 characters"
     password.classList.add("error")
     password2.classList.add("error")
+    document.querySelector(".password-info").style.visibility = "hidden"
+     document.querySelector(".password-info").style.margin = "0"
   }
   else if (passwordValue.length < 8 && passwordValue.length < 8) {
     errorMessage.textContent = "Password is less than 8 characters"
