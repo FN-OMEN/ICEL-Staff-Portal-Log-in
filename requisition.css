@@ -156,6 +156,14 @@ th {
   line-height: 50px;
   padding: 30px 0;
 }
+.footer-info{
+  width: 100%;
+  text-align: center;
+  background: black;
+  padding: 10px 0;
+  color: white;
+  font-size: 15px;
+}
 @media(min-width: 1450px){
   .content-1 [type = "text"]{
     width: 50%;
@@ -175,5 +183,8 @@ th {
   }
   .req-name{
     width: 66%;
+  }
+  .footer-info{
+    font-size: 20px;
   }
 }
