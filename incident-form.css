@@ -111,14 +111,15 @@
   text-transform: uppercase;
 }
 .content-2 input{
-  padding-left: 18% ;
+
+  text-align: center;
 }
 .content-4 input{
   border: none;
   border-bottom: 2px solid rgb(22, 182, 102);
   width: 42%;
   outline: none;
-  padding-left: 10%;
+  text-align: center;
 }
 .content-2 input:focus, .content-1 input:focus, .content-4 input:focus{
   border-bottom: 2px solid rgba(3, 18, 39, 0.911);
@@ -132,7 +133,6 @@
 
 .content-p {
   display: inline-block;
-
 }
 
 .form-header {
@@ -314,6 +314,7 @@
 }
 .form-content-5 input, .form-content-6 input{
   outline: none;
+  text-align: center;
 }
 .footer-info{
   width: 100%;
@@ -381,7 +382,6 @@
   }
   .content-2 input{
     width: 64.6%;
-    padding-left: 25%;
   }
   .content-4 input{
     width: 51%;
