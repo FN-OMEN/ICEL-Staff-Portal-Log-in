@@ -161,7 +161,13 @@ nav .fa-solid{
   margin: 0;
 }
 .team-descr{
+  margin: auto;
+  text-align: center;
   width: 100%;
+}
+.info{
+  font-size: 16px;
+  line-height: 25px;
 }
 .About{
   width: 80%;
@@ -413,6 +419,9 @@ nav .fa-solid{
   #myBtn{
     font-size: 20px;
     padding: 26px 30px;
+  }
+  .info{
+    font-size: 24px;
   }
 }
 
