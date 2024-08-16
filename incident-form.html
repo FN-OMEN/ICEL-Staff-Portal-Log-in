@@ -30,105 +30,105 @@
     <div class="mid-body-header">
       <h1>INCIDENT REPORT FORM</h1>
     </div>
-    <div class="mid-body-content">
-      <div class="content-1">
-        <p class="content-p">ID No. :</p>
-        <input type="text" value="ICEL/??/??" maxlength="13">
+    <form>
+      <div class="mid-body-content">
+        <div class="content-1">
+          <p class="content-p">ID No. :</p>
+          <input type="text" value="ICEL/ _ / _" minlength="15" maxlength="15" required>
+        </div>
+        <div class="content-2">
+          <p class="content-p">Date :</p>
+          <input type="date" required>
+        </div>
+        <div class="content-3">
+          <p>Dear Sir/Madam.</p>
+          <span class="content-desc">Below is the the Safety Report Procedure (SRP). You can simply fill in the information below to report the incident to the Health Safety and Environment (HSE) Officer.</span>
+        </div>
+        <div class="content-4">
+          <p>Staff Department:</p>
+          <input type="text" maxlength="25" required>
+        </div>
+      </div>  
       </div>
-      <div class="content-2">
-        <p class="content-p">Date :</p>
-        <input type="date">
+      <div class="form-header">
+        <div class="form-header-1">
+          <h3>Incident Details</h3>
+        </div>
+        <div class="form-header-2">
+          .
+        </div> 
+        <div class="form-header-3">
+          .
+        </div>
       </div>
-      <div class="content-3">
-        <p>Dear Sir/Madam.</p>
-        <span class="content-desc">Below is the the Safety Report Procedure (SRP). You can simply fill in the information below to report the incident to the Health Safety and Environment (HSE) Officer.</span>
-      </div>
-      <div class="content-4">
-        <p>Staff Department:</p>
-        <input type="text" maxlength="25">
-      </div>
-    </div>
-  </div>
-  <div class="form-header">
-    <div class="form-header-1">
-      <h3>Incident Details</h3>
-    </div>
-    <div class="form-header-2">
-      .
-    </div> 
-    <div class="form-header-3">
-      .
-    </div>
-  </div>
-  <div class="mid-body-container">
-    <div class="mid-body-content-2">
-      <form>
-        <div class="incident-type">
-          <h3>Incident Type</h3>
-          <div class="incident-type-1">
-            <input type="checkbox" class="radio" value="1" name="fooby[1][]" /><label>Accident</label>
+      <div class="mid-body-container">
+        <div class="mid-body-content-2">
+          <div class="incident-type">
+            <h3>Incident Type</h3>
+            <div class="incident-type-1">
+              <input type="checkbox" class="radio" value="1" name="fooby[1][]" required/><label>Accident</label>
+            </div>
+              <div class="incident-type-1">
+                <input type="checkbox" class="radio" value="1" name="fooby[1][]"/><label>Near Miss</label>
+              </div>
+              <div class="incident-type-1">
+                <input type="checkbox" class="radio" value="1" name="fooby[1][]"/><label>Unsafe Act</label>
+              </div>
+              <div class="incident-type-1">
+                <input type="checkbox" class="radio" value="1" name="fooby[1][]"/><label>Unsafe Condition</label>
+              </div>
+              <div class="incident-type-1">
+                <input type="checkbox" class="radio" value="1" name="fooby[1][]"/><label>Positive Behaviour</label>
+              </div>
           </div>
-            <div class="incident-type-1">
-              <input type="checkbox" class="radio" value="1" name="fooby[1][]" /><label>Near Miss</label>
+          <div class="form-content-2">
+            <p>Location</p>
+            <input type="text" required>
+          </div>
+          <div class="form-content-3">
+            <p>Incident Description</p>
+            <textarea rows="4" cols="40" required></textarea>
+          </div>
+          <div class="form-content-4">
+            <p>Immediate Corrective/Reinforcement Action</p>
+            <textarea rows="4" cols="40" required></textarea>
+          </div>
+          <div class="form-content-5">
+            <p>Date Observed</p>
+            <input type="date" required>
+          </div>
+          <div class="form-content-6">
+            <p>Date Reported</p>
+            <input type="date" required>
+          </div>
+          <div class="form-content-7">
+            <p>Observed by</p>
+            <input type="text" required>
+          </div>
+          <div class="form-content-8">
+            <p>Incident Report Category</p>
+            <div class="selector">
+              <div id="selectField">
+                <p id="selectText">Select the appropriate category</p>
+                <i id="arrowIcon" class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+              </div>
+              <ul id="list" class="hide">
+                <li class="options" aria-required="">PPE</li>
+                <li class="options">Work Environment</li>
+                <li class="options">Ergonomics</li>
+                <li class="options">Tools & Equipments</li>
+                <li class="options">Procedures</li>
+                <li class="options">Slip</li>
+                <li class="options">Trip & Fall</li>
+              </ul>
             </div>
-            <div class="incident-type-1">
-              <input type="checkbox" class="radio" value="1" name="fooby[1][]" /><label>Unsafe Act</label>
-            </div>
-            <div class="incident-type-1">
-              <input type="checkbox" class="radio" value="1" name="fooby[1][]" /><label>Unsafe Condition</label>
-            </div>
-            <div class="incident-type-1">
-              <input type="checkbox" class="radio" value="1" name="fooby[1][]" /><label>Positive Behaviour</label>
-            </div>
-        </div>
-        <div class="form-content-2">
-          <p>Location</p>
-          <input type="text">
-        </div>
-        <div class="form-content-3">
-          <p>Incident Description</p>
-          <textarea rows="4" cols="40"></textarea>
-        </div>
-        <div class="form-content-4">
-          <p>Immediate Corrective/Reinforcement Action</p>
-          <textarea rows="4" cols="40"></textarea>
-        </div>
-        <div class="form-content-5">
-          <p>Date Observed</p>
-          <input type="date">
-        </div>
-        <div class="form-content-6">
-          <p>Date Reported</p>
-          <input type="date">
-        </div>
-        <div class="form-content-7">
-          <p>Observed by</p>
-          <input type="text">
-        </div>
-        <div class="form-content-8">
-          <p>Incident Report Category</p>
-          <div class="selector">
-            <div id="selectField">
-              <p id="selectText">Select the appropriate category</p>
-              <i id="arrowIcon" class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
-            </div>
-            <ul id="list" class="hide">
-              <li class="options">PPE</li>
-              <li class="options">Work Environment</li>
-              <li class="options">Ergonomics</li>
-              <li class="options">Tools & Equipments</li>
-              <li class="options">Procedures</li>
-              <li class="options">Slip</li>
-              <li class="options">Trip & Fall</li>
-            </ul>
+          </div>
+          <div class="submission">
+            <button type="submit">Submit</button>
           </div>
         </div>
-        <div class="submission">
-          <button>Submit</button>
-        </div>
-      </form>
-    </div>
-  </div>
+      </div>
+    </form>
   <script src="incident-form.js"></script>
 </body>
 </html>

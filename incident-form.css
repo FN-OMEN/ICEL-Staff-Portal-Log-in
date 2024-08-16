@@ -167,7 +167,7 @@
   color: rgb(22, 182, 102);
 }
 
-.mid-body-content-2 form {
+.mid-body-content-2{
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 180px;
@@ -219,7 +219,7 @@
   font-weight: 500;
 }
 
-form textarea {
+.mid-body-content-2 textarea {
   margin-top: 8px;
   resize: none;
   outline: none;
@@ -230,7 +230,7 @@ form textarea {
   width: 70%;
 }
 
-form textarea:focus {
+.mid-body-content-2 textarea:focus {
   border: 2px solid rgba(3, 18, 39, 0.911);
   transition: 0.5s;
 }
