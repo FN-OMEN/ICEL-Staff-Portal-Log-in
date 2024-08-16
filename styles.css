@@ -118,6 +118,7 @@ form{
 .forgot-password{
   font-size: 13px;
   color: rgb(22, 182, 102);
+  display: none;
 }
 .log-in-btn{
   width: 100%;

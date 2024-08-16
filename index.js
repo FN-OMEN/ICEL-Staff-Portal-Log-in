@@ -34,23 +34,6 @@ function usernameValidation() {
   }
 }
 
-function emailValidation() {
-  let email = document.getElementById("email");
-  let emailValue = email.value;
-  let errorMessage = document.querySelector(".email-error-message");
-  
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailPattern.test(emailValue)) {
-    errorMessage.textContent = "Enter a valid Email";
-    email.classList.add("error");
-    return false;
-  } else {
-    errorMessage.textContent = "";
-    email.classList.remove("error");
-    return true;
-  }
-}
-
 function passwordValidation() {
   let password = document.getElementById("password");
   let passwordValue = password.value;
@@ -73,10 +56,9 @@ function passwordValidation() {
 
 function validateForm() {
   const isUsernameValid = usernameValidation();
-  const isEmailValid = emailValidation();
   const isPasswordValid = passwordValidation();
   
-  if (isUsernameValid && isEmailValid && isPasswordValid) {
+  if (isUsernameValid && isPasswordValid) {
     window.location = "homepage.html";
   }
 
