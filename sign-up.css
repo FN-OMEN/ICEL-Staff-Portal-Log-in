@@ -80,7 +80,7 @@ body{
 }
 .username{
   padding: 10px 0 10px 35px;
-  width: 100%;
+  width: 90%;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid rgb(22, 182, 102);
@@ -96,7 +96,7 @@ body{
 }
 .email{
   padding: 10px 0 10px 35px;
-  width: 100%;
+  width: 90%;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid rgb(22, 182, 102);
@@ -105,7 +105,7 @@ body{
 }
 .password{
   padding: 10px 0 10px 35px;
-  width: 100%;
+  width: 90%;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid rgb(22, 182, 102);
@@ -119,11 +119,12 @@ body{
   margin: 5px 0;
   font-weight: 500;
   color: rgb(22, 182, 102);
+  width: 90%;
 }
 .call-to-action{
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 90%;
   justify-content: space-between;
 }
 
@@ -138,7 +139,7 @@ body{
   color: rgb(22, 182, 102);
 }
 .log-in-btn{
-  width: 100%;
+  width: 90%;
   font-size: 15px;
   font-weight: 600;
   color: white;
@@ -175,13 +176,13 @@ body{
 .input-box .fa-regular{
   position: absolute;
   top: 17%;
-  left: 93%;
+  left: 83%;
   transform: translateY(-5%)
 }
 .input-box-2 .fa-regular{
   position: absolute;
   top: 30%;
-  left: 93%;
+  left: 83%;
   transform: translateY(-5%)
 }
 .error-message, .error-message-1{
