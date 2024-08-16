@@ -173,7 +173,7 @@ body{
   left: 90%;
   transform: translateY(-5%)
 }
-.error-message{
+.error-message, .error-message-1{
   color: red;
   font-size: 14px;
   margin-top: 15px;

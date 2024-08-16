@@ -29,43 +29,44 @@ function togglePassword2() {
     showPassword.classList.add('fa-eye')
   }
 }
-    function Validation() {
-    let password = document.getElementById("password");
-    let password2 = document.getElementById("password-2")
-    let passwordValue = password.value
-    let passwordValue2 = password2.value
-    let errorMessage = document.querySelector(".error-message")
+function passwordValidation() {
+  let password = document.getElementById("password");
+  let password2 = document.getElementById("password-2")
+  let passwordValue = password.value
+  let passwordValue2 = password2.value
+  let errorMessage = document.querySelector(".error-message")
 
-    if (passwordValue.length < 8 && passwordValue.length < 8 && passwordValue2.length < 8 && passwordValue2.length < 8) {
-      errorMessage.textContent = "Password is less than 8 characters"
-      password.classList.add("error")
-      password2.classList.add("error")
-    }
-    else if (passwordValue.length < 8 && passwordValue.length < 8) {
-      errorMessage.textContent = "Password is less than 8 characters"
-      password.classList.add("error")
-      password2.classList.remove("error")
-    }
-    else if (passwordValue2.length < 8 && passwordValue2.length < 8) {
-      errorMessage.textContent = "Password is less than 8 characters"
-      password.classList.remove("error")
-      password2.classList.add("error")
-    }
-    else if (passwordValue !== passwordValue2) {
-      errorMessage.textContent = "Password does not match!"
-      password.classList.add("error")
-      password2.classList.add("error")
-    }
-    else if (passwordValue === "" && passwordValue2 === "") {
-      errorMessage.textContent = "Please enter a password"
-    }
-    else {
-      errorMessage.textContent = ""
-      password.classList.remove("error")
-      password2.classList.remove("error")
-      window.location = "index.html"
-    }
+  if (passwordValue.length < 8 && passwordValue.length < 8 && passwordValue2.length < 8 && passwordValue2.length < 8) {
+    errorMessage.textContent = "Password is less than 8 characters"
+    password.classList.add("error")
+    password2.classList.add("error")
   }
+  else if (passwordValue.length < 8 && passwordValue.length < 8) {
+    errorMessage.textContent = "Password is less than 8 characters"
+    password.classList.add("error")
+    password2.classList.remove("error")
+  }
+  else if (passwordValue2.length < 8 && passwordValue2.length < 8) {
+    errorMessage.textContent = "Password is less than 8 characters"
+    password.classList.remove("error")
+    password2.classList.add("error")
+  }
+  else if (passwordValue !== passwordValue2) {
+    errorMessage.textContent = "Password does not match!"
+    password.classList.add("error")
+    password2.classList.add("error")
+  }
+  else if (passwordValue === "" && passwordValue2 === "") {
+    errorMessage.textContent = "Please enter a password"
+  }
+  else {
+    errorMessage.textContent = ""
+    password.classList.remove("error")
+    password2.classList.remove("error")
+    window.location = "index.html"
+  }
+}
+
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelector(".log-in-btn").addEventListener('click', function (event) {
       event.preventDefault()

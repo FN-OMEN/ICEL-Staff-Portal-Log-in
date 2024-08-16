@@ -23,7 +23,7 @@ function usernameValidation() {
     username.classList.add("error");
     return false;
   }
-  else if (usernameValue <= 5) {
+  else if (usernameValue.length < 5) {
     errorMessage.textContent = "Username must be at least 5 characters long";
     return false;
   }
@@ -56,7 +56,7 @@ function passwordValidation() {
   let passwordValue = password.value;
   let errorMessage = document.querySelector(".password-error-message");
   
-  if (passwordValue.length < 8 && passwordValue.length > 1) {
+  if (passwordValue.length < 8 && passwordValue.length > 0) {
     errorMessage.textContent = "Password is less than 8 characters";
     password.classList.add("error");
     return false;
