@@ -42,7 +42,7 @@ table input{
 }
 .content-1 [type = "date"]{
   width: 33%;
-  padding-left: 8%;
+  text-align: center;
   box-sizing: border-box;
 }
 .po{
@@ -62,7 +62,7 @@ table input{
 }
 .req-date{
   width: 68%;
-  padding-left: 20%;
+  text-align: center;
   box-sizing: border-box;
 }
 .req-mail{
