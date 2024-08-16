@@ -163,25 +163,25 @@ body{
 .input-box .fa-solid{
   position: absolute;
   top: 16%;
-  left: 3%;
+  left: 1%;
   transform: translateY(-4%)
 }
 .input-box-2 .fa-solid{
   position: absolute;
   top: 23%;
-  left: 3%;
+  left: 1%;
   transform: translateY(-4%)
 }
 .input-box .fa-regular{
   position: absolute;
   top: 17%;
-  left: 90%;
+  left: 93%;
   transform: translateY(-5%)
 }
 .input-box-2 .fa-regular{
   position: absolute;
   top: 30%;
-  left: 90%;
+  left: 93%;
   transform: translateY(-5%)
 }
 .error-message, .error-message-1{
