@@ -239,8 +239,15 @@ body{
   }
   .log-in-btn{
     margin-bottom: 30px;
+    margin-top: 0;
   }
   .description .fa-solid{
     transform: rotate(90deg);
+  }
+  .username, .email, .password, .password-2, .log-in-btn{
+    width: 100%;
+  }
+  .email{
+    font-size: 13px;
   }
 }
