@@ -377,6 +377,10 @@ nav .fa-solid{
   #myBtn{
     right: 1%;
   }
+  .team-member p{
+    width: 100%;
+    line-height: 0;
+  }
 }
 
 @media(min-width: 1450px){
