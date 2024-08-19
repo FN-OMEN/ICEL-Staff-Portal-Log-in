@@ -206,6 +206,9 @@ body{
   .left-content img{
     width: 100%;
   }
+  .right-content-carrier{
+    width: 45%;
+  }
 }
 @media(max-width: 750px){
   .header{
