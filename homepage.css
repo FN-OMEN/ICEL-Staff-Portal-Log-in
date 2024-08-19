@@ -12,7 +12,7 @@ body{
   background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/oil-rig.jpg);
   background-position: center;
   background-size: cover;
-  height: 145vh;
+  height: 130vh;
 }
 nav{
   display: flex;
