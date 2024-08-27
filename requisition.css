@@ -133,7 +133,7 @@ th {
   border-radius: 5px;
   cursor: pointer;
 }
-.add-row:hover,{
+.add-row:hover{
   background: white;
   color: black;
   border: 2px solid black;
