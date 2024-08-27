@@ -133,10 +133,16 @@ th {
   border-radius: 5px;
   cursor: pointer;
 }
-.add-row:hover, .delete-row:hover{
+.add-row:hover,{
   background: white;
   color: black;
   border: 2px solid black;
+  transition: 0.5s;
+}
+.delete-row:hover{
+  background: white;
+  color: red;
+  border: 2px solid red;
   transition: 0.5s;
 
 }
