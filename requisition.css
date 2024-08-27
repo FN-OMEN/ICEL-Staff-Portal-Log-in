@@ -111,10 +111,11 @@ th {
 }
 .row-btn{
   width: 100%;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 3%;
 }
-.row-btn button{
+.add-row{
   color: white;
   background: black;
   border: 2px solid black;
@@ -123,7 +124,16 @@ th {
   border-radius: 5px;
   cursor: pointer;
 }
-.row-btn button:hover{
+.delete-row{
+  color: white;
+  background: red;
+  border: 2px solid red;
+  font-size: 17px;
+  padding: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.add-row:hover, .delete-row:hover{
   background: white;
   color: black;
   border: 2px solid black;

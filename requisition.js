@@ -38,5 +38,23 @@ function addRow() {
   cell5.innerHTML = '0';
   cell5.className = 'subtotal';
   cell4.innerHTML = '<input type="text" class="Description Of Goods/Services" output="text">';
+}
+
+function deleteRow() {
+  let table = document.getElementById('table');
+  table.deleteRow(table.rows.length - 1);
+  let cell1 = newRow.insertCell(0);
+  let cell2 = newRow.insertCell(1);
+  let cell3 = newRow.insertCell(2);
+  let cell4 = newRow.insertCell(3);
+  let cell5 = newRow.insertCell(4);
   
+
+  cell1.textContent = 'Item ' + (table.rows.length - 2);
+  cell2.innerHTML = '<input type="number" value="0" class="price" oninput="calculateSubtotal(this)">';
+  cell3.innerHTML = '<input type="number" value="0" class="quantity" oninput="calculateSubtotal(this)">';
+  cell5.innerHTML = '0';
+  cell5.className = 'subtotal';
+  cell4.innerHTML = '<input type="text" class="Description Of Goods/Services" output="text">';
+
 }

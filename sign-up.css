@@ -86,10 +86,14 @@ body{
   border-bottom: 2px solid rgb(22, 182, 102);
   color:  rgb(158, 158, 167);
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .username::placeholder, .password::placeholder{
   font-size: 14px;
   font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .username:focus, .email:focus, .password:focus{
   outline: none;
@@ -102,6 +106,8 @@ body{
   border-bottom: 2px solid rgb(22, 182, 102);
   color:  rgb(158, 158, 167);
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .password{
   padding: 10px 0 10px 35px;
@@ -111,6 +117,8 @@ body{
   border-bottom: 2px solid rgb(22, 182, 102);
   color:  rgb(158, 158, 167);
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .password-info{
   text-align: left;

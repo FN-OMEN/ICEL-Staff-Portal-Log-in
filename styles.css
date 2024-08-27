@@ -77,10 +77,14 @@ form{
   border-radius: 3px;
   border: 1px solid rgb(158, 158, 167);
   color:  rgb(158, 158, 167);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .username::placeholder, .password::placeholder, .email::placeholder{
   font-size: 14px;
   font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .username:focus, .email:focus, .password:focus{
   border: 1px solid rgb(22, 182, 102);
@@ -94,6 +98,8 @@ form{
   border-radius: 3px;
   border: 1px solid rgb(158, 158, 167);
   color:  rgb(158, 158, 167);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .password{
   padding: 10px 0 10px 35px;
@@ -101,6 +107,8 @@ form{
   border-radius: 3px;
   border: 1px solid rgb(158, 158, 167);
   color:  rgb(158, 158, 167);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .call-to-action{
   display: flex;
