@@ -82,6 +82,8 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 2% 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 td, th {
@@ -89,6 +91,8 @@ td, th {
   text-align: left;
   padding: 8px;
   outline: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 tr:nth-child(even) {
@@ -102,12 +106,16 @@ th {
 .calculator-input {
   width: 80px;
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 .td input {
   width: 100%;
   box-sizing: content-box;
   text-align: right;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .row-btn{
   width: 100%;
