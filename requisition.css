@@ -131,6 +131,8 @@ th {
   padding: 13px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .delete-row{
   color: white;
@@ -140,6 +142,8 @@ th {
   padding: 13px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .add-row:hover{
   background: white;
