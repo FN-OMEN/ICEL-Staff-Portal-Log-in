@@ -28,46 +28,68 @@ body{
   outline: none;
   border: none;
   background: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 table input{
   border-bottom: none;
   width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .content-1 input, .recommend input, .request input{
   border-bottom: 2px solid black;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .content-1 [type = "text"]{
   width: 30%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .content-1 [type = "date"]{
   width: 33%;
   text-align: center;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .po{
   width: 73%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .service{
   width: 51%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .service-po{
   width: 52%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .req-name{
   width: 64%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .req-date{
   width: 68%;
   text-align: center;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .req-mail{
   width: 67%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .content-1{
   display: grid;

@@ -114,6 +114,8 @@ input, textarea {
   box-sizing: border-box;
   outline: none;
   background: transparent;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 #firstName, #lastName{
   margin-right: 0;
@@ -147,6 +149,8 @@ button {
   border-radius: 5px;
   cursor: pointer;
   text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 button:hover {
