@@ -191,7 +191,8 @@ header {
     width: 100%;
     right: 0;
     border-top-right-radius: 0px;
-    transition: 2s
+    transition: 2s;
+    top: 200px;
   }
   .travelForm-btn{
     font-size: 13.4px;
