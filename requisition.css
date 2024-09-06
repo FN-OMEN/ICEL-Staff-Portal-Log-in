@@ -145,7 +145,7 @@ th {
   justify-content: space-between;
   padding-bottom: 3%;
 }
-.add-row{
+.add-row, .row-btn button{
   color: white;
   background: black;
   border: 2px solid black;
