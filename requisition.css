@@ -145,7 +145,7 @@ th {
   justify-content: space-between;
   padding-bottom: 3%;
 }
-.add-row, .row-btn button{
+.add-row, .submit{
   color: white;
   background: black;
   border: 2px solid black;
@@ -167,7 +167,7 @@ th {
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
-.add-row:hover, .row-btn button:hover{
+.add-row:hover, .submit:hover{
   background: white;
   color: black;
   border: 2px solid black;
