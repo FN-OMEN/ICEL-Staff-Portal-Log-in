@@ -205,9 +205,13 @@ header {
   }
 }
 @media(max-width: 800px){
-  .container, .car-container{
+  .container{
     width: 100%;
-    right: 0;
+    border-top-right-radius: 0px;
+    transition: 2s
+  }
+  .car-container{
+    width: 100%;
     border-top-right-radius: 0px;
     transition: 2s
   }
