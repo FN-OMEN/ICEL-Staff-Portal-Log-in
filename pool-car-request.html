@@ -23,20 +23,22 @@
         <h4>Enter the details for your Pool Car request</h4>
         <form id="travelForm">
           <div class="dep-date">
-            <label for="checkin">Date Requested *</label>
-            <input type="date" id="checkin" name="checkin" required>
+            <label for="R-datecheckin">Date Requested *</label>
+            <input type="date" id="R-datecheckin" name="R-datecheckin" required>
           </div>
           <div class="airline">
-            <label>Requestor Name *</label>
-            <input type="text" required>
+            <label for="Requestor Name">Requestor Name *</label>
+            <input type="text" id="Requestor Name" required>
           </div>
           <div class="airline">
+            <label for="Phone Number">Phone Number *</label>
+            <input type="tel" id="Phone Number" required>
             <label for="pool-phone-number">Phone Number *</label>
             <input id="pool-phone-number" type="tel" required>
           </div>
           <div class="trip">
             <div>
-              <label>Number of passenger(s) *</label>
+              <label for="Number of passenger(S)">Number of passenger(s) *</label>
             </div>
             <div class="trip-1">
               <input type="radio" name="pass-no" required><span>1</span>
@@ -49,60 +51,56 @@
             </div>
           </div>
           <div class="passenger-name">
-            <label>Name of Passenger(s) *</label>
+            <label for="Passenger Names">Name of Passenger(s) *</label>
             <input type="text" required>
             <input type="text">
             <input type="text">
           </div>
           <div class="airline">
-            <label>Pick-up Location *</label>
-            <input type="text" required>
+            <label for="Pick-up Location">Pick-up Location *</label>
+            <input type="text" id="Pick-up Location" required>
           </div>
           <div class="airline">
-            <label>Drop-off Destination *</label>
-            <input type="text" required>
+            <label for="Drop-off Destination">Drop-off Destination *</label>
+            <input type="text" id="Drop-off Destination" required>
           </div>
           <div class="airline">
-            <label>Return Location *</label>
-            <input type="text" required>
+            <label for="Return Location">Return Location *</label>
+            <input type="text" id="Return Location" required>
           </div>
           <div class="airline">
-            <label>Purpose of Trip *</label>
-            <input type="text" required>
+            <label for="Purpose of Trip">Purpose of Trip *</label>
+            <input type="text" id="Purpose of Trip" required>
           </div>
           <div class="dep-date">
-            <label for="checkin">Departure Date *</label>
-            <input type="date" id="checkin" name="checkin" required>
+            <label for="Depaturecheckin">Departure Date *</label>
+            <input type="date" id="Depaturecheckin" name="Depaturecheckin" required>
           </div>
           <div class="dep-date">
-            <label for="checkin">Return Date *</label>
-            <input type="date" id="checkin" name="checkin" required>
+            <label for="Returncheckin">Return Date *</label>
+            <input type="date" id="Returncheckin" name="Returncheckin" required>
           </div>
           <div class="dep-date">
-            <label for="checkin">Departure Time *</label>
-            <input type="time" id="checkin" name="checkin" required>
+            <label for="DpaturecheckinTime">Departure Time *</label>
+            <input type="time" id="DpaturecheckinTime" name="DpaturecheckinTime" required>
           </div>
           <div class="dep-date">
-            <label for="checkin">Estimated Return Time *</label>
-            <input type="time" id="checkin" name="checkin" required>
-          </div>
-          <div class="airline">
-            <label>Vehicle Driven by *</label>
-            <input type="text" required>
+            <label for="Estimatedcheckin">Estimated Return Time *</label>
+            <input type="time" id="Estimatedcheckin" name="Estimatedcheckin" required>
           </div>
           <div class="request">
             <h4>Director/Supervisor Information</h4>
             <div class="airline">
-              <label for="checkin">Name *</label>
-              <input type="text" required>
+              <label for="Namecheckin">Name *</label>
+              <input type="text" id="Namecheckin" required>
             </div>
             <div class="airline">
-              <label for="checkin">Designation *</label>
-              <input type="text" required>
+              <label for="Designationcheckin">Designation *</label>
+              <input type="text" id="Designationcheckin" required>
             </div>
             <div class="airline">
-              <label for="checkin">Email *</label>
-              <input type="mail" required>
+              <label for="Emailcheckin">Email *</label>
+              <input type="mail" id="Emailcheckin" required>
             </div>
           </div>
           <div class="submit">
@@ -115,6 +113,6 @@
         <button onclick="showForm()" type="submit" class="travelForm-btn">Proceed to Request for a Pool Car</button>
     </div>
   </div>
-    <script src="travel.js"></script>
+    <script src="pool-car-request.js"></script>
 </body>
 </html>

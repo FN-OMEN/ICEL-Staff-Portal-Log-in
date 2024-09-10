@@ -174,7 +174,7 @@
   row-gap: 30px;
 }
 
-.mid-body-content-2 p {
+.mid-body-content-2 p, .upload{
   color: rgba(3, 18, 39, 0.911);
   font-weight: 700;
 }
@@ -314,6 +314,20 @@
 }
 .form-content-5 input, .form-content-6 input{
   outline: none;
+}
+input[type="file"]{
+  padding: 5px;
+  font-size: 13.5px;
+  background: rgb(22, 182, 102);
+  border: 2px solid rgba(3, 18, 39, 0.911);
+  border-radius: 5px;
+  color: rgba(3, 18, 39, 0.911);
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.form-content-9{
+  margin-bottom: 20px;
 }
 .footer-info{
   width: 100%;
