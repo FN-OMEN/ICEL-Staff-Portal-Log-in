@@ -28,46 +28,68 @@ body{
   outline: none;
   border: none;
   background: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 table input{
   border-bottom: none;
   width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .content-1 input, .recommend input, .request input{
   border-bottom: 2px solid black;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .content-1 [type = "text"]{
   width: 30%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .content-1 [type = "date"]{
   width: 33%;
   text-align: center;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .po{
   width: 73%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .service{
   width: 51%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .service-po{
   width: 52%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .req-name{
   width: 64%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .req-date{
   width: 68%;
   text-align: center;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .req-mail{
   width: 67%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .content-1{
   display: grid;
@@ -82,6 +104,8 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 2% 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 td, th {
@@ -89,6 +113,8 @@ td, th {
   text-align: left;
   padding: 8px;
   outline: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 tr:nth-child(even) {
@@ -102,19 +128,24 @@ th {
 .calculator-input {
   width: 80px;
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 
 .td input {
   width: 100%;
   box-sizing: content-box;
   text-align: right;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .row-btn{
   width: 100%;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 3%;
 }
-.row-btn button{
+.add-row, .submit{
   color: white;
   background: black;
   border: 2px solid black;
@@ -122,11 +153,30 @@ th {
   padding: 13px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
-.row-btn button:hover{
+.delete-row{
+  color: white;
+  background: red;
+  border: 2px solid red;
+  font-size: 17px;
+  padding: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+.add-row:hover, .submit:hover{
   background: white;
   color: black;
   border: 2px solid black;
+  transition: 0.5s;
+}
+.delete-row:hover{
+  background: white;
+  color: red;
+  border: 2px solid red;
   transition: 0.5s;
 
 }

@@ -81,7 +81,8 @@ header {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .submit-btn:hover {
   background-color: #0056b3;
@@ -104,6 +105,8 @@ header {
   border-radius: 5px;
   cursor: pointer;
   font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .close {
   position: absolute;
@@ -141,6 +144,8 @@ header {
   outline: none;
   border-bottom: 2px solid black;
   padding-top: 5px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .passenger-name input:focus, .airline input:focus{
   border-bottom: 2px solid #0056b3;
@@ -161,6 +166,8 @@ header {
   border-bottom: 1px solid black;
   width: 80%;
   outline: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .departure-time div{
   margin: 8px 0;
@@ -184,7 +191,8 @@ header {
     width: 100%;
     right: 0;
     border-top-right-radius: 0px;
-    transition: 2s
+    transition: 2s;
+    top: 185px;
   }
   .travelForm-btn{
     font-size: 13.4px;

@@ -38,5 +38,15 @@ function addRow() {
   cell5.innerHTML = '0';
   cell5.className = 'subtotal';
   cell4.innerHTML = '<input type="text" class="Description Of Goods/Services" output="text">';
-  
+}
+
+function deleteRow() {
+  let table = document.getElementById('table');
+
+  // Ensure the table has more than three rows (header + first data row + at least one more data row)
+  if (table.rows.length > 3) {
+    table.deleteRow(table.rows.length - 2); // Delete the second-to-last row (excluding the total row)
+  } else {
+    console.error("Cannot delete the table header or the first data row.");
+  }
 }
