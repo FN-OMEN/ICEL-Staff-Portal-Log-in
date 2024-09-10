@@ -32,7 +32,8 @@
         <div class="user">
           <img width="150px" src="images/imperial-crest-logo.png">
         </div>
-        <form>
+        <form method="post" action="{% url 'login' %}">
+          {%csrf_token %}
           <div class="input-box">
             <i class="fa-solid fa-user" style="color: #16b666;"></i>
             <input id="username" class="username" type="text" placeholder="User name" required>
