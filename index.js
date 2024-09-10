@@ -13,23 +13,23 @@ function togglePassword() {
   }
 }
 
-function usernameValidation() {
-  let username = document.getElementById("username");
-  let usernameValue = username.value;
-  let errorMessage = document.querySelector(".username-error-message");
+function emailValidation() {
+  let email = document.getElementById("email");
+  let emailValue = email.value;
+  let errorMessage = document.querySelector(".email-error-message");
   
-  if (usernameValue === "") {
-    errorMessage.textContent = "Enter your Username";
-    username.classList.add("error");
+  if (emailValue === "") {
+    errorMessage.textContent = "Enter your email";
+    email.classList.add("error");
     return false;
   }
-  else if (usernameValue.length < 5) {
-    errorMessage.textContent = "Username must be at least 5 characters long";
+  else if (emailValue.length < 5) {
+    errorMessage.textContent = "Email must be at least 5 characters long";
     return false;
   }
   else {
     errorMessage.textContent = "";
-    username.classList.remove("error");
+    email.classList.remove("error");
     return true;
   }
 }
@@ -55,10 +55,10 @@ function passwordValidation() {
 }
 
 function validateForm() {
-  const isUsernameValid = usernameValidation();
+  const isEmailValid = emailValidation();
   const isPasswordValid = passwordValidation();
   
-  if (isUsernameValid && isPasswordValid) {
+  if (isEmailValid && isPasswordValid) {
     window.location = "homepage.html";
   }
 
