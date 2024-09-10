@@ -98,6 +98,8 @@ nav .fa-solid{
   border: 1px solid white;
   background: transparent;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .fill-btn-2{
   width: 100%;
@@ -108,6 +110,8 @@ nav .fa-solid{
   border: 1px solid white;
   background: transparent;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
 .fill-btn:hover, .fill-btn-2:hover{
   background:  rgb(22, 182, 102);
