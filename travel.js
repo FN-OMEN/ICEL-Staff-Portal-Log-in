@@ -1,6 +1,6 @@
 function showForm() {
   document.getElementById('travelFormContainer').style.left = '0px';
-  document.querySelector('.travelForm').style.display = 'none';
+  document.querySelector('.travelForm').style.visibility = 'hidden';
   changeBackground2()
 }
 
@@ -16,14 +16,14 @@ function revertbackground() {
 }
 function showCarForm() {
   document.getElementById('travelCarFormContainer').style.right = '0px';
-  document.querySelector('.travelForm').style.display = 'none';
+  document.querySelector('.travelForm').style.visibility = 'hidden';
   changeBackground1()
 }
 
 function hideForm() {
   document.getElementById('travelFormContainer').style.left = '-800px';
   document.getElementById('travelCarFormContainer').style.right = '-800px';
-  document.querySelector('.travelForm').style.display = 'block';
+  document.querySelector('.travelForm').style.visibility = 'visible';
   revertbackground()
 }
 
