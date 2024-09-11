@@ -264,4 +264,16 @@ body{
   .email{
     font-size: 13px;
   }
+  .input-box .fa-regular{
+    position: absolute;
+    top: 17%;
+    left: 90%;
+    transform: translateY(-5%)
+  }
+  .input-box-2 .fa-regular{
+    position: absolute;
+    top: 30%;
+    left: 90%;
+    transform: translateY(-5%)
+  }
 }
