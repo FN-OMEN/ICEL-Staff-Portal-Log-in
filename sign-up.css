@@ -56,7 +56,7 @@ body{
 .right-content{
   justify-content: center;
   align-items: center;
-  flex-basis: 100%;
+  width: 100%;
   display: flex;
   flex-shrink: 1;
   margin: 0 8px;
@@ -238,6 +238,9 @@ body{
   }
   .right-content p{
     margin-bottom: 30px;
+  }
+  .right-content-carrier{
+    width: 80%;
   }
   body{
     height: 100%;

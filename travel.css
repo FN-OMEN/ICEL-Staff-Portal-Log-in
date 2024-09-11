@@ -158,7 +158,7 @@ header {
 .passenger-name, .airline, .ticket-type, .flight-type, .dep-date, .departure-time{
   margin: 15px 0;
 }
-.passenger-name input, .airline input{
+.passenger-name input, .airline input, .trip input[type="text"], .dep-date input[type="date"], .dep-date input[type="time"]{
   background: transparent;
   width: 80%;
   border: none;
@@ -167,6 +167,10 @@ header {
   padding-top: 5px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+}
+.trip input[type="text"]::placeholder{
+  color: black;
+  font-size: 15px;
 }
 .passenger-name input:focus, .airline input:focus{
   border-bottom: 2px solid #0056b3;
