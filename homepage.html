@@ -6,8 +6,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet">            
+  <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.css" rel="stylesheet">            
   <link rel="stylesheet" href="homepage.css">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="icon" href="images/house-solid.svg">
   <title>Employee Portal Home page</title>
@@ -52,13 +54,46 @@
       <a href="requisition.html"><button class="fill-btn">Requisitions</button></a>
     </div>
   </div>
-  <div class="about-section">
-    <div class="About">
-      <h2 id="about-us">About Us</h2>
-      <p>Excellence is not just a goal; it's a standard that defines us. Our commitment to delivering superior quality and sustainable solutions sets us apart. We embrace cutting-edge technologies, adhere to the highest safety standards, and prioritize environmental stewardship.</p>
-      <p>Imperial Crest Energy Limited, is an indigenous oil and gas company with experience and capabilities in the upstream, midstream, and downstream sectors.</p>
-      <p>Our team comprises industry experts and visionaries who bring a wealth of knowledge to the table. From the exploration and extraction of valuable resources in the upstream sector to the efficient transportation in the midstream, and finally, the distribution and marketing prowess in the downstream, we seamlessly integrate our capabilities to drive success at every stage of the energy value chain.</p>
-    </div>
+  <style>
+    #calendar {
+      max-width: 900px;
+      margin: 40px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="calendar"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth', // Month view by default
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        },
+        events: [
+          // Example event data
+          {
+            title: 'Meeting with Client',
+            start: '2024-09-10T10:00:00',
+            end: '2024-09-10T12:00:00'
+          },
+          {
+            title: 'Project Deadline',
+            start: '2024-09-12',
+            allDay: true
+          }
+        ]
+      });
+
+      calendar.render();
+    });
+  </script>
     <div class="services">
       <h1>Services you can Access</h1>
       <p class="services-desc">What Services can you access on our Online Platform</p>
