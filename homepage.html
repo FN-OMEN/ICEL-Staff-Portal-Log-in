@@ -56,8 +56,48 @@
   </div>
   <style>
     #calendar {
-      max-width: 900px;
+      max-width: 100%;
+      width: 100%;
       margin: 40px auto;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    /* Media query for tablets */
+    @media (max-width: 768px) {
+      #calendar {
+        max-width: 100%;
+        margin: 20px auto;
+      }
+
+      /* Adjust toolbar layout for smaller screens */
+      .fc-toolbar.fc-header-toolbar {
+        flex-wrap: wrap;
+      }
+
+      .fc-toolbar.fc-header-toolbar .fc-left,
+      .fc-toolbar.fc-header-toolbar .fc-right {
+        width: 100%;
+        text-align: center;
+      }
+
+      .fc-toolbar.fc-header-toolbar .fc-center {
+        order: -1;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
+    /* Media query for mobile */
+    @media (max-width: 480px) {
+      #calendar {
+        margin: 5px;
+      }
+
+      .fc-toolbar.fc-header-toolbar {
+        font-size: 14px;
+      }
+    
     }
   </style>
 </head>
