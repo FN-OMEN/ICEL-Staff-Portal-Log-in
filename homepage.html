@@ -7,9 +7,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.css" rel="stylesheet">            
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.css" rel="stylesheet">  
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js"></script>          
   <link rel="stylesheet" href="homepage.css">
-  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.5/index.global.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="icon" href="images/house-solid.svg">
   <title>Employee Portal Home page</title>
@@ -26,7 +26,7 @@
           <i onclick="hideMenu()" class="fa-solid fa-xmark"></i>
           <ul>
             <li><a onclick="hideMenu()" href="#home">Home</a></li>
-            <li><a onclick="hideMenu()" href="#about-us">About Us</a></li>
+            <li><a onclick="hideMenu()" href="#calendar-header">ICEL Calendar</a></li>
             <li><a onclick="hideMenu()" href="#about-team">About Team</a></li>
             <li><a href="index.html">Log out</a></li>
           </ul>
@@ -51,108 +51,31 @@
       <a href="pool-car-request.html"><button class="fill-btn-2">Pool Car Request</button></a>
       <a href="travel.html"><button class="fill-btn">Travel Notice Form</button></a>
       <a href="contact.html"><button class="fill-btn">IT Complaint Form</button></a>
-      <a href="requisition.html"><button class="fill-btn">Requisitions</button></a>
+      <a href="requisitions.html"><button class="fill-btn">Requisitions</button></a>
     </div>
   </div>
-  <style>
-    #calendar {
-      max-width: 100%;
-      width: 100%;
-      margin: 40px auto;
-      padding: 0px;
-      box-sizing: border-box;
-    }
-
-    /* Media query for tablets */
-    @media (max-width: 768px) {
-      #calendar {
-        max-width: 100%;
-        margin: 20px auto;
-      }
-
-      /* Adjust toolbar layout for smaller screens */
-      .fc-toolbar.fc-header-toolbar {
-        flex-wrap: wrap;
-      }
-
-      .fc-toolbar.fc-header-toolbar .fc-left,
-      .fc-toolbar.fc-header-toolbar .fc-right {
-        width: 100%;
-        text-align: center;
-      }
-
-      .fc-toolbar.fc-header-toolbar .fc-center {
-        order: -1;
-        width: 100%;
-        margin-bottom: 10px;
-      }
-    }
-
-    /* Media query for mobile */
-    @media (max-width: 480px) {
-      #calendar {
-        margin: 5px;
-      }
-
-      .fc-toolbar.fc-header-toolbar {
-        font-size: 14px;
-      }
-    
-    }
-  </style>
-</head>
-<body>
-
-  <div id="calendar"></div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var calendarEl = document.getElementById('calendar');
-
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth', // Month view by default
-        headerToolbar: {
-          left: 'prev,next today',
-          center: 'title',
-          right: 'dayGridMonth,timeGridWeek,timeGridDay'
-        },
-        events: [
-          // Example event data
-          {
-            title: 'Meeting with Client',
-            start: '2024-09-10T10:00:00',
-            end: '2024-09-10T12:00:00'
-          },
-          {
-            title: 'Project Deadline',
-            start: '2024-09-12',
-            allDay: true
-          }
-        ]
-      });
-
-      calendar.render();
-    });
-  </script>
-    <div class="services">
-      <h1>Services you can Access</h1>
-      <p class="services-desc">What Services can you access on our Online Platform</p>
-      <div class="services-column">
-        <div class="column-1">
-          <img src="images/car.jpg">
-          <h3>Pool Car Request Form</h3>
-          <p>Requesting for a pool car has now been made easier. This feature allows you to request and submit your requisition for the company pool car.</p>
-        </div>
-        <div class="column-1">
-          <img src="images/form.jpg">
-          <h3>Incident Report Form</h3>
-          <p>Tracking and reporting Health, Safety and Environment (HSE) Reports can now easily be accessed on this dynamic online platform accessible to every ICEL staff.</p>
-        </div>
-        <div class="column-1">
-          <img src="images/plane-2.jpg">
-          <h3>Travel Notice Form</h3>
-          <p>Have to be on a local or international flight under short notice? Booking Flights has been made easier just by filling a short form which would be sent to the appropriate designation.</p>
-        </div>
+  <div class="calendar">
+    <h1 id="calendar-header">ICEL Calendar</h1>
+    <div id="calendar"></div>
+  </div>
+  <div class="services">
+    <h1>Services you can Access</h1>
+    <p class="services-desc">What Services can you access on our Online Platform</p>
+    <div class="services-column">
+      <div class="column-1">
+        <img src="images/car.jpg">
+        <h3>Pool Car Request Form</h3>
+        <p>Requesting for a pool car has now been made easier. This feature allows you to request and submit your requisition for the company pool car.</p>
+      </div>
+      <div class="column-1">
+        <img src="images/form.jpg">
+        <h3>Incident Report Form</h3>
+        <p>Tracking and reporting Health, Safety and Environment (HSE) Reports can now easily be accessed on this dynamic online platform accessible to every ICEL staff.</p>
+      </div>
+      <div class="column-1">
+        <img src="images/plane-2.jpg">
+        <h3>Travel Notice Form</h3>
+        <p>Have to be on a local or international flight under short notice? Booking Flights has been made easier just by filling a short form which would be sent to the appropriate designation.</p>
       </div>
     </div>
   </div>

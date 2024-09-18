@@ -66,7 +66,7 @@ nav .fa-solid{
   margin: auto;
   color: white;
 }
-.content h1{
+.content h1, .calendar h1{
   font-size: 60px;
   margin-bottom: 0;
   margin-top: 0;
@@ -153,7 +153,6 @@ nav .fa-solid{
 
 .aboutteam-section {
   background-color: white;
-  font-family: 'Proxima Nova Condensed', sans-serif;
 }
 .name{
   font-size: 27px;
@@ -190,9 +189,8 @@ nav .fa-solid{
 .about-section{
   width: 100%; 
   padding: 50px 0;
-  font-family: 'Proxima Nova Condensed', sans-serif;
 }
-.services{
+.services, .calendar{
   width: 80%;
   height: 100%;
   text-align: center;
@@ -242,7 +240,7 @@ nav .fa-solid{
 }
 .aboutteam-section{
   width: 100%;
-  padding: 0;
+  padding: 100px 0;
 }
 .about-team{
   width: 80%;
@@ -281,6 +279,12 @@ nav .fa-solid{
   padding: 15px 18px;
   border-radius: 100px;
   font-size: 15px; 
+}
+#calendar {
+  max-width: 100%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 @media(max-width: 800px){
   .header{
@@ -385,8 +389,59 @@ nav .fa-solid{
     width: 100%;
     line-height: 16px;
   }
+  #calendar{
+    max-width: 100%;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
 }
 
+@media (max-width: 768px) {
+  #calendar {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  /* Adjust toolbar layout for smaller screens */
+  .fc-toolbar.fc-header-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .fc-toolbar.fc-header-toolbar .fc-left,
+  .fc-toolbar.fc-header-toolbar .fc-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fc-toolbar.fc-header-toolbar .fc-center {
+    order: -1;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .calendar h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 480px) {
+  #calendar {
+    margin: 5px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .fc-toolbar.fc-header-toolbar {
+    font-size: 8px;
+  }
+  .fc-toolbar-title{
+    font-size: 10px;
+  }
+}
 @media(min-width: 1450px){
   .header{
     height: 110vh;

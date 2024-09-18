@@ -39,6 +39,33 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     return events;
   }
+  function generateMonthlyEvents(baseEvent, startDate, endDate) {
+    let events = [];
+    let currentDate = new Date(startDate);
+    let end = new Date(endDate);
+
+    while (currentDate <= end) {
+      let event = Object.assign({}, baseEvent); // Clone the base event
+
+      // Adjust the start date for the event in "YYYY-MM-DD" format
+      let year = currentDate.getFullYear();
+      let month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Ensure 2-digit month
+      let day = baseEvent.startDay;
+      event.start = `${year}-${month}-${day}`;
+
+      if (baseEvent.endDay) {
+        let endDay = baseEvent.endDay;
+        event.end = `${year}-${month}-${endDay}`;
+      }
+
+      events.push(event);
+      
+      // Move to the next month
+      currentDate.setMonth(currentDate.getMonth() + 1);
+    }
+    return events;
+  }
+
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'dayGridMonth', // Month view by default

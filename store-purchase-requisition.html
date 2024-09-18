@@ -5,28 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="requisition.css">
+  <link rel="stylesheet" href="store-purchase-requisition.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <link rel="icon" href="images/oil-well-solid.svg">
-  <title>Purchasing Requisition</title>
+  <link rel="icon" href="images/envelope-solid.svg">
+  <title>Store Purchasing Requisition</title>
 </head>
 <body>
-<script src="requisition.js"></script>
+<script src="store-purchase-requisition.js"></script>
   <div class="navigation-links-left">
     <img src="images/imperial-crest-logo.png">
-    <h1>PURCHASING REQUISITION</h1>
+    <h1>STORE PURCHASING REQUISITION</h1>
   </div>
   <div class="content">
     <div class="content-body">
       <form>
         <div class="content-1">
-
           <div class="">
-            <p>Department: Admin</p>
+            <p>Department: <input type="text" required></p>
           </div>
           <div class="date">
-            <span>Delivery-Date *:</span>
+            <span>Date *:</span>
             <input type="date" required>
           </div>
           <div class="">
@@ -45,7 +44,7 @@
             </div>
           </div>
           <div class="">
-            <span>Account paid to *:</span>
+            <span>Account details *:</span>
             <input type="text" required>
           </div>
         </div>
@@ -88,8 +87,11 @@
           <button class="delete-row" type="button" onclick="deleteRow()">Delete Row</button>
         </div>
         <div class="content-2">
-          <h2>Purpose: For Office Use</h2>
           <div class="content-1">
+            <div class="option-1">
+              <label>Name of Store *:</label>
+              <input type="text">
+            </div>
             <div class="option-1">
               <p>Budgeted Expenditure *:</p>
               <input type="radio" name="budget" required><span>Yes</span>
@@ -106,134 +108,63 @@
               <input type="radio" name="store" required><span>No</span>
             </div>
             <div class="option-1">
-              <label for="Name of Store">Name of Store *:</label>
-              <input type="text" id="Name of Store">
+              <label>Budget Description *:</label>
+              <input type="text" required>
             </div>
-          </div>
-        </div>
-        <table>
-          <th colspan="8" style="text-align: center;">Quotations/Tenders Recieved</th>
-          <tr>
-            <th>S/N</th>
-            <th>Suppliers Name</th>
-            <th>Vendor on the Database?</th>
-            <th>Contact Name</th>
-            <th>Telephone</th>
-            <th>Email</th>
-            <th>Price offers</th>
-            <th>Special Conditions/Remarks</th>
-          </tr>
-          <tr>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-          </tr>
-          <tr>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-          </tr>
-          <tr>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-          </tr>
-          <tr>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-            <td contenteditable="true"></td>
-          </tr>
-        </table>
-        <div class="recommend">
-          <div class="recommend-1">
-            <label for="firstprovider">Recommended Supplier:</label>
-            <input class="service" id="firstprovider" type="text">
-          </div>
-          <div class="recommend-1">
-            <label for="secondprovider">Service Provider:</label>
-            <input class="service-po" id="secondprovider" type="text">
-          </div>
-          <div class="recommend-1">
-            <label for="P.O No:">P.O. No:</label>
-            <input class="po" id="P.O No:" type="text">
-          </div>
-          <div class="recommend-1">
-            <label for="reason">Reason(s) if not the lowest offer:</label>
-            <input class="po" id="reason" type="text">
           </div>
         </div>
         <div class="request">
           <div class="footer">
             <h1>Requested By:</h1>
             <div class="">
-              <label for="firstName">Name* :</label>
-              <input class="req-name" id="firstName" type="text" required>
+              <label>Name* :</label>
+              <input class="req-name" type="text" required>
             </div>
             <div class="">
-              <label for="firstDesignation">Designation* :</label>
-              <input class="req-des" id="firstDesignation" type="text" required>
+              <label>Designation* :</label>
+              <input class="req-des" type="text" required>
             </div>
             <div class="">
-              <label for="firstdate">Date* :</label>
-              <input class="req-date" type="date" name="footer" id="firstdate" required>
+              <label for="date">Date* :</label>
+              <input class="req-date" type="date" name="footer" id="Date" required>
             </div>
           </div>
           <div class="footer">
             <h1>Authorization Info:</h1>
             <div class="">
-              <label for="secondName">Name* :</label>
-              <input class="req-name" id="secondName" type="text" required>
+              <label>Name* :</label>
+              <input class="req-name" type="text" required>
             </div>
             <div class="">
-              <label for="secondDesignation">Designation* : </label>
-              <input class="req-des" id="secondDesignation" type="text" required>
+              <label>Designation* : </label>
+              <input class="req-des" type="text" required>
             </div>
             <div class="">
-              <label for="seconddate">Date* :</label>
-              <input class="req-date" type="date" name="footer" id="seconddate" required>
+              <label for="date">Date* :</label>
+              <input class="req-date" type="date" name="footer" id="Date" required>
             </div>
             <div class="">
-              <label for="Mail">Email* :</label>
+              <label for="mail">Email* :</label>
               <input class="req-mail" type="mail" name="footer" id="Mail" required>
             </div>
           </div>
           <div class="footer">
             <h1>Approval Info:</h1>
             <div class="">
-              <label for="thirdName">Name* :</label>
-              <input class="req-name" id="thirdName" type="text" required>
+              <label>Name* :</label>
+              <input class="req-name" type="text" required>
             </div>
             <div class="">
-              <label for="thirdsDesignation">Designation* :</label>
-              <input class="req-des" id="thirdsDesignation" type="text" required>
+              <label>Designation* :</label>
+              <input class="req-des" type="text" required>
             </div>
             <div class="">
-              <label for="thirddate">Date* :</label>
-              <input class="req-date" id="thirddate" type="date" name="footer" id="Date" required>
+              <label for="date">Date* :</label>
+              <input class="req-date" type="date" name="footer" id="Date" required>
             </div>
             <div class="">
-              <label for="secondmail">Email* :</label>
-              <input class="req-mail"  type="mail" id="secondmail" name="footer" id="Mail" required>
+              <label for="mail">Email* :</label>
+              <input class="req-mail" type="mail" name="footer" id="Mail" required>
             </div>
           </div>
         </div>
