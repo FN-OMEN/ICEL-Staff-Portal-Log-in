@@ -17,7 +17,7 @@
 .header img {
   width: 270px;
   padding-left: 6%;
-  padding-top: 2.5%;
+  padding-top: 2%;
 }
 
 .header p {
@@ -105,13 +105,13 @@
   outline: none;
 }
 .content-1 input{
-  padding-left: 20%;
+  text-align: center;
   font-weight: 500;
   color: rgba(3, 18, 39, 0.911);
   text-transform: uppercase;
 }
 .content-2 input{
-  padding-left: 18% ;
+ text-align: center;
 }
 .content-4 input{
   border: none;
@@ -394,14 +394,13 @@ input[type="file"]{
     font-size: 20px;
   }
   .content-2 input{
-    width: 64.6%;
-    padding-left: 35%;
+    text-align: center;
   }
   .content-4 input{
     width: 51%;
-    padding-left: 24%;
+    text-align: center;
   }
   .footer-info{
-    font-size: 20px;
+    text-align: center;
   }
 }

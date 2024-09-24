@@ -31,6 +31,11 @@ body {
   border-right: 1px solid #ccc;
   justify-content: center;
 }
+.left img{
+  position: absolute;
+  left: 6%;
+  top: 5%;
+}
 
 .left .info-container {
   display: flex;
@@ -108,7 +113,7 @@ textarea::placeholder {
 
 input, textarea {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   text-align: left;
@@ -179,6 +184,9 @@ form{
   .left {
     border-right: none;
   }
+  .left img{
+    display: none;
+   }
 }
 
 @media (min-width: 1450px) {
@@ -217,9 +225,15 @@ form{
     right: -35%;
     bottom: 0%;
   }
+  .left img{
+    width: 200px;
+   }
 }
 @media(max-width: 320px){
   .info a{
     font-size: 13.5px;
+  }
+  .left img{
+   display: none;
   }
 }
